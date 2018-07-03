@@ -1,0 +1,1 @@
+Place the partial HTML files in this folder.
