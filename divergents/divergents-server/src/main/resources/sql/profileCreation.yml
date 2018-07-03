@@ -1,8 +1,0 @@
-profilecreation:
- getTrainingPartnerData: >
-  select * from trainingPartner 
-    where applicationId=:applicationId;
-    
- getTrainingCenterData: >
-  select * from trainingCenter
-  	where trainingPartnerId = :trainingPartnerId;

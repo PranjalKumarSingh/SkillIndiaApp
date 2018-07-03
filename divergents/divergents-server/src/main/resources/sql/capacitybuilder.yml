@@ -1,6 +1,0 @@
-trainingscapacitybuilder:
- trainingsfortrainingpartner: >
-  select * from upcomingtraining WHERE userrole= 'TP' and startdate>curdate();
-  
- trainingsforassessmentbody: >
-  select * from upcomingtraining WHERE userrole= 'AB' and startdate>curdate();

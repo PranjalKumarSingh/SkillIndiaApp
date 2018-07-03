@@ -1,7 +1,0 @@
-govDashboard: 
-
- totalTrainingCenters: > 
-  SELECT COUNT(trainingCenterId) from trainingCenter
-
- totalCandidatesPlaced: >
-  select SUM(candidatesPlaced)  from placementInformation

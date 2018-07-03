@@ -1,8 +1,0 @@
-Session: 
- getUserIdPasswordRole: >
-   select userId,password,userRole from msde.user
-    where userId=:userId
-    
- checkUserSql: >
-   select exists(select 1 from msde.user where userId=:userId)   
-    

@@ -1,4 +1,0 @@
-skillcompetitionsql:
- skillcompetitionforsubmit: >
-  INSERT INTO skillcompetiton (participantName,participantEmail,participantAddress,participantAge,skillSector,skillSectorCategory)
-   values (:participantName,:participantEmail,:participantAddress,:participantAge,:skillSector,:skillSectorCategory)

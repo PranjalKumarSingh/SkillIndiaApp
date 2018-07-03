@@ -1,3 +1,0 @@
-register:
- checkUserSql: >
-  SELECT EXISTS(SELECT * FROM user WHERE organizationName= :organizationName or userId = :userId )

@@ -1,6 +1,0 @@
-talentAcquisition:
- selectCandidateAccordingtoJobrole: >
-  select candidateDetailsId,candidateName,candidateAge,candidateLocation,emailId
-   from certificate
-    join candidate on certificate.candidateID=candidate.candidatedetailsID
-     join jobrole on certificate.jobroleID=jobrole.jobroleID where jobRoleName like :jobRoleName;

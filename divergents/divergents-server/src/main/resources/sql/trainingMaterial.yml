@@ -1,9 +1,0 @@
-trainingMaterial:
- selectTrainingMaterial: >
-  select trainingmaterialid,trainingtitle,trainingmaterialurl
-   from trainingmaterial inner join jobrole on trainingmaterial.jobRoleId= jobrole.jobRoleId WHERE jobRoleName like :jobRoleName;
-   
-   
- selectAllTrainingMaterial: >
-  select trainingmaterialid,trainingtitle,trainingmaterialurl
-   from trainingmaterial;

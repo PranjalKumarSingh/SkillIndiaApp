@@ -1,7 +1,0 @@
-interestedTp:
-
- interestedTpRegistration: >
-  insert into interestedTp (organisationName,location,jobRole,pocName,pocEmail) values (:organisationName,:location,:jobRole,:pocName,:pocEmail)
-  
- interestedTpCheckStatus: >
-  SELECT EXISTS(select * from interestedTp where organisationName= :organisationName and jobRole= :jobRole)

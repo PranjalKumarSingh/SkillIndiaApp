@@ -1,5 +1,0 @@
-govPolicy:
- selectGovPolicy: > 
-  select *
-   from policygovernment WHERE title like :letter
-   

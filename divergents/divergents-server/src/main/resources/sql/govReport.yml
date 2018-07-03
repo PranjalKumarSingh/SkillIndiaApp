@@ -1,5 +1,0 @@
-govReport:
- selectGovReport: > 
-  select *
-   from reportgovernment WHERE title like :letter
-   
