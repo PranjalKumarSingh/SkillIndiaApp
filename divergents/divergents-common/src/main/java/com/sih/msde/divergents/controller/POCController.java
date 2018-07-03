@@ -1,4 +1,4 @@
-package com.nskfdc.scgj.controller;
+package com.sih.msde.divergents.controller;
 
 import java.util.Collection;
 
@@ -8,8 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nskfdc.scgj.dto.PocDto;
-import com.nskfdc.scgj.service.POCService;
+import com.sih.msde.divergents.dto.PocDto;
+import com.sih.msde.divergents.service.POCService;
+
+
+
+
 
 @RestController
 public class POCController {
@@ -17,7 +21,7 @@ public class POCController {
 	private static final Logger LOGGER= LoggerFactory.getLogger(POCController.class);
 	
 	@Autowired
-	private POCService pocService;
+	private POCService pocservice;
 	
 	@RequestMapping("/getTrainingPartnerDetailForPOC")
 	public Collection<PocDto> getTrainingPartnerDetailForPOC(){
@@ -29,7 +33,7 @@ public class POCController {
 			
 			LOGGER.debug("In try block to get training partner details for POC");
 			LOGGER.debug("Sending request to service");
-			return pocService.getPOCTrainingPartnerDetail();
+			return pocservice.getPOCTrainingPartnerDetail();
 			
 		}catch(Exception e) {
 			

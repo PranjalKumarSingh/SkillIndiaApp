@@ -1,4 +1,4 @@
-package com.nskfdc.scgj.service;
+package com.sih.msde.divergents.service;
 
 import java.util.Collection;
 
@@ -7,8 +7,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nskfdc.scgj.dao.POCDao;
-import com.nskfdc.scgj.dto.PocDto;
+import com.sih.msde.divergents.dao.POCDao;
+import com.sih.msde.divergents.dto.PocDto;
+
 
 @Service
 public class POCService {

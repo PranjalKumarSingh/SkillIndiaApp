@@ -1,6 +1,6 @@
-package com.nskfdc.scgj.dto;
+package com.sih.msde.divergents.dto;
 
-import com.nskfdc.scgj.common.BaseDto;
+import com.sih.msde.divergents.common.BaseDto;
 
 public class PocDto extends BaseDto{
 	

@@ -1,4 +1,4 @@
-package com.nskfdc.scgj.dao;
+package com.sih.msde.divergents.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,9 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.nskfdc.scgj.common.AbstractTransactionalDao;
-import com.nskfdc.scgj.config.POCConfig;
-import com.nskfdc.scgj.dto.PocDto;
+import com.sih.msde.divergents.common.AbstractTransactionalDao;
+import com.sih.msde.divergents.config.POCConfig;
+import com.sih.msde.divergents.dto.PocDto;
+
+
 
 @Repository
 public class POCDao extends AbstractTransactionalDao{

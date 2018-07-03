@@ -1,4 +1,4 @@
-package com.nskfdc.scgj.config;
+package com.sih.msde.divergents.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
