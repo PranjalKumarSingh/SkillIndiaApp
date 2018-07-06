@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head><title>Skill India App</title>
+<link type="text/css" href="css/skillIndiaApp.css" rel="stylesheet"/>
+
+ <!--CDN css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.css">
+
+   
+
+    <!--CDN javascripts-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-cookies.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.0/ui-bootstrap-tpls.js"></script>
+
+	<script src="js/controllers/skillIndiaApp.js"></script>
+	
+</head>
+<body ng-app="skillIndiaApp" >
+	
+<div class="container-fluid" ng-controller="skillIndiaController">
+		<header class="header row"><img class="imgs col-md-1" src="../images/NSDC logo.png" type="image/png"/>
+		<img class="imgs col-md-1" src="images/Image-of-Skill-India.png" type="image/png"/>
+		
+		
+		<nav class="navbar row">
+		<ul>
+			<li><a ng-click="x='HOME'">HOME</a></li>
+			<li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
+			<li><a ng-click="x='webinar'">WEBINARS</a></li>
+			<li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
+			<li><a ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
+			<li><a ng-click="x='helpline'">HELPLINE</a></li>
+			<li><a ng-click="x='userType'">USER TYPE</a></li>				
+					
+	  </ul>
+	
+		</nav>
+		</header>
+		
+		<div class="mainbody row">
+		
+		<div ng-switch on="x">
+
+		<div ng-switch-when="HOME">
+		<div ng-include src="'partials/homePage.html'"></div>
+		</div>
+		
+		<div ng-switch-when="SKILL COMPETITIONS">
+		<div ng-include src="'partials/skillComp.html'"></div>
+		</div>
+		
+		<div ng-switch-when="webinar">
+		<div ng-include src="'partials/webinar.html'"></div>
+		</div>
+		
+		<div ng-switch-when="skillGapStudy">
+		<div ng-include src="'partials/skillGapStudy.html'"></div>
+		</div>
+		
+		<div ng-switch-when="tendersAndRfps">
+		<div ng-include src="'partials/tendersAndRfps.html'"></div>
+		</div>
+		
+		<div ng-switch-when="helpline">
+		<div ng-include src="'partials/helpline.html'"></div>
+		</div>
+		
+		<div ng-switch-when="userType">
+		<div ng-include src="'partials/userType.html'"></div>
+		</div>
+		
+		</div>
+	</div>
+	
+	<footer class="footer row">
+				
+					<div><img class="img1 col-md-3" src="images\industry_partnership_&_CSR.png" type="image/png"/></div>
+					<div class="image2 col-md-1"><img class="img2" src="images\quick facts.png" type="image/png"/><label><h6>Quick Facts</h6></label></div>
+					<div class="image3 col-md-1"><img class="img3" src="images\sector skill council.png" type="image/png"/><label><h6>Sector Skill Council</h6></label></div>
+					<div class="image4 col-md-1"><img class="img4" src="images\csr.png" type="image/png"/><label><h6>CSR</h6></label></div>
+					<div class="image5 col-md-1"><img class="img5" src="images\key policy.png" type="image/png"/><label><h6>Employee Certification</h6></label></div>
+					<div class="image6 col-md-1"><img class="img6" src="images\Talent Acquisition.png" type="image/png"/><label><h6>Talent Acquisition</h6></label></div>
+					<div class="image7 col-md-1"><img class="img7" src="images\Relevant Documents.png" type="image/png"/><label><h6>Documents and Policies</h6></label></div>
+				
+				</footer>
+		
+	
+	</div>
+</body>
+    
+</html>
