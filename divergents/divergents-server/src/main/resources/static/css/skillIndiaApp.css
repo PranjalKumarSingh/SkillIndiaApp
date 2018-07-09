@@ -3,14 +3,48 @@ margin:0;
 
 }
 .header{
-
+padding:1%;
 	background-color:#fbfbfb;
-	height:6rem;
-	font-size: 1rem;
+	height:7rem;
+	font-size: 76%;
+}
+
+.navbar{
+margin-bottom: 1px;
+}
+
+.dropdown{
+	position: relative;
+	
+}
+.btn-default {
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+.btn{
+	display: flex;
+    margin-bottom: 0;
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 58%;
+    left: 561px;
+    z-index: 1000;
 }
 .mainbody{
 
-	margin:0rem;
+	margin:0%;
 	background-color:#eaeac3;
 	height:49rem;
 }
@@ -20,24 +54,33 @@ margin:0;
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding-top:0;
-	padding-left:0;
+    margin-left:15%;
+    padding-top:1%;
+	padding-left:0%;
     overflow: hidden;
     background-color: #fbfbfb;
 }
 
-li {
+
+li a{
+color:grey;
 	padding:1rem;
-    float: right;
+    float: left;
 }
 
-.footer{
-   
-	margin:0rem;
-	background-color:#4888b5;
-	height:10rem;
+.footer {
+   margin:0%;
+   position: fixed;
+   left: 0%;
+   bottom: 0%;
+   width: 102%;
+   background-color: #438abb;
+   color: white;
+   text-align: center;
 }
+
+
+
 p{
 	text-size:1rem;
 	padding:0.5rem;
@@ -50,12 +93,12 @@ label{
    
 .img1{
 
-    height: 10rem;
-    margin-left: -2rem;
+    height: 11rem;
+    margin-left: 0rem;
  
 }
 .image2{
-    margin-left:17rem;
+    margin-left:12%;
 	border-right:1px solid #bbb;
 	height:11rem;
 }
@@ -80,7 +123,7 @@ label{
 .image4{
     margin-left:2rem;
 	border-right:1px solid #bbb;
-	height:10rem;
+	height:11rem;
 }
 .img4{
 	height: 4rem;
@@ -91,7 +134,7 @@ label{
 .image5{
     margin-left:2rem;
 	border-right:1px solid #bbb;
-	height:10rem;
+	height:11rem;
 }
 .img5{
 	height: 4rem;
@@ -103,7 +146,7 @@ label{
 .image6{
     margin-left:2rem;
 	border-right:1px solid #bbb;
-	height:10rem;
+	height:11rem;
 }
 .img6{
 	height: 4rem;
@@ -115,7 +158,7 @@ label{
 }
 .image7{
     margin-left:2rem;
-    height:10rem;
+    height:11rem;
 }
 .img7{
 	height: 4rem;
