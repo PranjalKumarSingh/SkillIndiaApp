@@ -1,0 +1,150 @@
+<html>
+<head>
+  <title>
+    dashboard
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/template.css" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+
+  <!--CDN javaScripts-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-cookies.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.js"></script>
+  <script src="js/controllers/template.js"></script>
+
+
+
+</head>
+
+
+
+<body ng-app="MyApp" >
+<div class="container-fluid" ng-controller="MyController">
+  <div class ="align">
+    <div class="row">
+      <div class="navbar row">
+
+
+
+        <div class="col-md-3">
+          <img class="logo1" src="images/NSDC logo.png">
+          <img class="logo2" src="images/Image-of-Skill-India.png">
+        </div>
+
+
+        <div class="navbar-header">
+          <nav>
+            <ul class="nav navbar-nav">
+
+
+              <li> <a  ng-click="x='HOME'">
+                HOME </a>
+              </li>
+
+              <li><a  ng-click="x='SKILL COMPETITIONS'">
+                SKILL COMPETITIONS</a>
+              </li>
+
+
+              <li><a  ng-click="x= 'WEBINARS'">WEBINARS
+                </a>
+              </li>
+
+
+              <li><a href="skillgap.html" ng-click="x='SKILL GAP STUDY'">
+                SKILL GAP STUDY</a>
+              </li>
+
+
+              <li><a ng-click="x='TENDERS AND RPFs'">
+                TENDERS AND RPF's </a>
+              </li>
+
+
+              <li><a ng-click="x='HELPLINE'">
+                HELPLINE</a>
+              </li>
+
+              <li><a  ng-click="x='USER TYPE'">
+                USER TYPE</a>
+              </li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="space row" ng-switch on="x">
+
+
+
+
+          <div ng-switch-when="HOME">
+            <div ng-include src="'home.html'"></div>
+          </div>
+          <div ng-switch-when="SKILL COMPETITIONS">
+            <div ng-include src="'skillcomp.html'"></div>
+          </div>
+          <div ng-switch-when="WEBINARS">
+            <div> <ng-include src="'../partials/webinar.html'"></ng-include></div>
+          </div>
+          <div ng-switch-when="SKILL GAP STUDY">
+            <div ng-include src="'partials/skillgap.html'"></div>
+          </div>
+          <div ng-switch-when="TENDERS AND RFP's">
+            <div ng-include src="'partials/tenders.html'"></div>
+          </div>
+          <div ng-switch-when="HELPLINE">
+            <div ng-include src="'partials/helpline.html'"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="footer row">
+
+    <img class="img1 col-md-4"  src="images/want_to_be_skilled.png" >
+    <div col-md-8>
+      <img class="img2 " src="images/job role.png" >
+      <img class="img3 " src="images/Find TC.png" >
+      <img class="img4 " src="images/fund.png" >
+      <img class="img5 " src="images/reports.png" >
+      <img class="img6 " src="images/government.png" >
+      <img class="img7 " src="images/skill gap study.png">
+    </div>
+
+  </div>
+
+
+
+
+</div>
+</body>
+</html>

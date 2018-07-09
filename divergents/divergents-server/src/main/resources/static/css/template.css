@@ -1,0 +1,78 @@
+.display{
+	display:inline;
+}
+.logo1{
+	    height: 3rem;
+    padding: 1rem;
+}
+.space{
+    background-color: white;
+	    height: 60rem;
+    margin: -2rem;
+	margin-bottom:2rem;
+}
+.footer{
+	height:8rem;
+	background-color:#004fffc9;
+	margin:0rem;
+}
+.img1{
+	height:8rem;
+	padding-right:3rem;
+
+}
+.img2{
+	height:4rem;
+	display:inline;
+	margin: 2rem;
+    padding-left: 4rem;
+		
+
+	
+}
+.img3{
+	height:4rem;
+	display:inline;
+	margin: 2rem;
+    padding-left: 4rem;
+		
+	
+}
+.img4{
+	height:4rem;
+	display:inline;
+	margin: 2rem;
+    padding-left: 4rem;
+		
+}
+.img5{
+	
+	display:inline;
+	margin: 2rem;
+	height: 4rem;
+    padding-left: 4rem;
+		
+
+}
+.img6{
+	display:inline;
+	margin: 2rem;
+    height: 4rem;
+    padding-left: 4rem;
+		
+		
+
+}
+.img7{
+	height:4rem;
+	display:inline;
+	margin: 2rem;
+    padding-left: 4rem;
+		
+
+}
+.logo2{
+	height:3rem;
+}
+.navbar{
+	background-color:#f7f6fbab;
