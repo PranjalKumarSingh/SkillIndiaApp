@@ -1,2 +1,2 @@
 # team-divergents
-this repository is created for competetion of smart India Hackathon
+this repository is created for Skill India App
