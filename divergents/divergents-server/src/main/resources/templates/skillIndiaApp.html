@@ -3,7 +3,7 @@
 <head><title>Skill India App</title>
 <link type="text/css" href="css/skillIndiaApp.css" rel="stylesheet"/>
 
- <!--CDN css-->
+<!--CDN css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.css">
 
@@ -24,121 +24,114 @@
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.0/ui-bootstrap-tpls.js"></script>
 
-	<script src="js/controllers/skillIndiaApp.js"></script>
-	
+      <script src="js/controllers/skillIndiaApp.js"></script>
+      
 </head>
 <body ng-app="skillIndiaApp" >
-	
+      
 <div class="container-fluid" ng-controller="skillIndiaController">
-		<div class="header row"><img class="imgs col-md-1" src="../images/NSDC logo.png" type="image/png"/>
-		<img class="imgs col-md-1" src="images/Image-of-Skill-India.png" type="image/png"/>
-		
-		
-		<nav class="  col-md-10 ultag_one">
-		<ul id="one">
-			<li><a ng-click="x='HOME'">HOME</a></li>
-			<li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
-			<li><a ng-click="x='webinar'">WEBINARS</a></li>
-			<li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
-			<li><a ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
-			<li><a ng-click="x='helpline'">HELPLINE</a></li>
-		
-			<li class="dropdown">
-        		<a class="dropdown-toggle" data-toggle="dropdown" href="#">USER TYPE<span class="caret"></span></a>
-            		<ul class="dropdown-menu">
-          				<li><a href="#">STUDENT</a></li>
-          				<li><a href="#">INDUSTRY</a></li>
+            <div class="header row"><img class="imgs col-md-1" src="../images/NSDC logo.png" type="image/png"/>
+            <img class="imgs col-md-1" src="images/Image-of-Skill-India.png" type="image/png"/>
+            
+            
+            <nav class="  col-md-10 ultag_one">
+            <ul id="one">
+                  <li><a ng-click="x='HOME'">HOME</a></li>
+                  <li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
+                  <li><a ng-click="x='webinar'">WEBINARS</a></li>
+                  <li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
+                  <li><a ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
+                  <li><a ng-click="x='helpline'">HELPLINE</a></li>
+            
+                  <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">USER TYPE<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                              <li><a href="#">STUDENT</a></li>
+                              <li><a href="#">INDUSTRY</a></li>
           
-       				 </ul>
-      		</li>
-			
-			
-					
-	  </ul>
-	
-		</nav>
-		</div>
-		
-		<div class="mainbody row">
-		
-		<div ng-switch on="x">
+                               </ul>
+                  </li>
+                  
+                  
+                              
+        </ul>
+      
+            </nav>
+            </div>
+            
+            <div class="mainbody row">
+            
+            <div ng-switch on="x">
 
-		<div ng-switch-when="HOME">
-		<div ng-include src="'partials/homePage.html'"></div>
-		</div>
-		
-		<div ng-switch-when="SKILL COMPETITIONS">
-		<div ng-include src="'partials/skillComp.html'"></div>
-		</div>
-		
-		<div ng-switch-when="webinar">
-		<div ng-include src="'partials/webinar.html'"></div>
-		</div>
-		
-		<div ng-switch-when="skillGapStudy">
-		<div ng-include src="'partials/skillGapStudy.html'"></div>
-		</div>
-		
-		<div ng-switch-when="tendersAndRfps">
-		<div ng-include src="'partials/tendersAndRfps.html'"></div>
-		</div>
-		
-		<div ng-switch-when="helpline">
-		<div ng-include src="'partials/helpline.html'"></div>
-		</div>
-		
-		<div ng-switch-when="userType">
-		<div ng-include src="'partials/userType.html'"></div>
-		</div>
-		
-		<div ng-switch-when="Quick Facts">
-		<div ng-include src="'partials/quickFacts.html'"></div>
-		</div>
-		
-		<div ng-switch-when="Sector Skill Council">
-		<div ng-include src="'partials/sector.html'"></div>
-		</div>
-		
-		<div ng-switch-when="CSR">
-		<div ng-include src="'partials/csr.html'"></div>
-		</div>
-		
-		<div ng-switch-when="Employee Certification">
-		<div ng-include src="'partials/employee.html'"></div>
-		</div>
-		
-		<div ng-switch-when="Talent Acquisition">
-		<div ng-include src="'partials/talent.html'"></div>
-		</div>
-		
-		<div ng-switch-when="Documents and Policies">
-		<div ng-include src="'partials/documents.html'"></div>
-		</div>
-		
-		</div>
-	</div>
-	
-	<div class="footer row">
-				
-					<div class="col-md-3"><img class="img1 " src="images\industry_partnership_&_CSR.png" type="image/png"/></div>
-					
-				
-			
-					<nav class="  col-md-9  ultag_two">
-					<ul id="two">
-						<li class="image2 col-md-1"><img class="img2" src="images\quick facts.png" type="image/png"/><label><a ng-click="x='Quick Facts'"><h6 style="color:white">Quick Facts</h6></a></label></li>
-					    <li class="image3 col-md-1"><img class="img3" src="images\sector skill council.png" type="image/png"/><label><a ng-click="x='Sector Skill Council'"><h6 style="color:white">Sector Skill Council</h6></a></label></li>
-						<li class="image4 col-md-2"><img class="img4" src="images\csr.png" type="image/png"/><label><a ng-click="x='CSR'"><h6 style="color:white">CSR</h6></a></label></li>
-						<li class="image5 col-md-2"><img class="img5" src="images\key policy.png" type="image/png"/><label><a ng-click="x='Employee Certification'"><h6 style="color:white">Employee Certification</h6></a></label></li>
-						<li class="image6 col-md-2"><img class="img6" src="images\Talent Acquisition.png" type="image/png"/><label><a ng-click="x='Talent Acquisition'"><h6 style="color:white">Talent Acquisition</h6></a></label></li>
-						<li class="image7 col-md-1"><img class="img7" src="images\Relevant Documents.png" type="image/png"/><label><a ng-click="x='Documents and Policies'"><h6 style="color:white">Documents and Policies</h6></a></label></li>
-				</ul>
-				</nav>
-				
-	</div>
-		
-	
-	</div>
+            <div ng-switch-when="HOME">
+            <div ng-include src="'partials/homePage.html'"></div>
+            </div>
+            
+            <div ng-switch-when="SKILL COMPETITIONS">
+            <div ng-include src="'partials/skillComp.html'"></div>
+            </div>
+            
+            <div ng-switch-when="webinar">
+            <div ng-include src="'partials/webinar.html'"></div>
+            </div>
+            
+            <div ng-switch-when="skillGapStudy">
+            <div ng-include src="'partials/skillGapStudy.html'"></div>
+            </div>
+            
+            <div ng-switch-when="tendersAndRfps">
+            <div ng-include src="'partials/tendersAndRfps.html'"></div>
+            </div>
+            
+            <div ng-switch-when="helpline">
+            <div ng-include src="'partials/helpline.html'"></div>
+            </div>
+            
+            <div ng-switch-when="userType">
+            <div ng-include src="'partials/userType.html'"></div>
+            </div>
+            
+            <div ng-switch-when="Quick Facts">
+            <div ng-include src="'partials/quickFacts.html'"></div>
+            </div>
+            
+            <div ng-switch-when="Sector Skill Council">
+            <div ng-include src="'partials/sector.html'"></div>
+            </div>
+            
+            <div ng-switch-when="CSR">
+            <div ng-include src="'partials/csr.html'"></div>
+            </div>
+            
+            <div ng-switch-when="Employee Certification">
+            <div ng-include src="'partials/employee.html'"></div>
+            </div>
+            
+            <div ng-switch-when="Talent Acquisition">
+            <div ng-include src="'partials/talent.html'"></div>
+            </div>
+            
+            <div ng-switch-when="Documents and Policies">
+            <div ng-include src="'partials/documents.html'"></div>
+            </div>
+            
+            </div>
+      </div>
+      
+     <div class="footer row">
+
+           
+			 
+			 <div><img class="img1 col-md-3" src="images\industry_partnership_&_CSR.png" type="image/png"/></div>
+			<div style="cursor: pointer; color: white;"ng-click="x='Quick Facts'" class="img-common image2 col-md-1"><img class="img2" src="images\quick facts.png" type="image/png"/><h6>Quick Facts</h6></div>
+			<div style="cursor: pointer; color: white;"ng-click="x='Sector Skill Council'" class="img-common image3 col-md-1"><img class="img3" src="images\sector skill council.png" type="image/png"/><label><h6>Sector Skill Council</h6></label></div>
+			<div style="cursor: pointer; color: white;"ng-click="x='CSR'" class="img-common image4 col-md-1"><img class="img4" src="images\csr.png" type="image/png"/><label><h6>CSR</h6></label></div>
+			<div style="cursor: pointer; color: white;"ng-click="x='Employee Certification'" class="img-common image5 col-md-1"><img class="img5" src="images\key policy.png" type="image/png"/><label><h6>Employee Certification</h6></label></div>
+			<div style="cursor: pointer; color: white;"ng-click="x='Talent Acquisition'" class="img-common image6 col-md-1"><img class="img6" src="images\Talent Acquisition.png" type="image/png"/><label><h6>Talent Acquisition</h6></label></div>
+			<div style="cursor: pointer; color: white;"ng-click="x='Documents and Policies'" class="img-common image7 col-md-1"><img class="img7" src="images\Relevant Documents.png" type="image/png"/><label><h6>Documents and Policies</h6></label></div>
+        </div>
+
+      </div>
 </body>
     
 </html>
