@@ -4,9 +4,9 @@ margin:0;
 }
 .header{
 padding:1%;
-	background-color:#fbfbfb;
-	height:7rem;
-	font-size: 76%;
+      background-color:#fbfbfb;
+      height:7rem;
+      font-size: 76%;
 }
 
 .navbar{
@@ -14,8 +14,8 @@ margin-bottom: 1px;
 }
 
 .dropdown{
-	position: relative;
-	
+      position: relative;
+      
 }
 .btn-default {
     color: #333;
@@ -23,7 +23,7 @@ margin-bottom: 1px;
 }
 
 .btn{
-	display: flex;
+      display: flex;
     margin-bottom: 0;
     font-size: 6px;
     font-weight: 400;
@@ -44,18 +44,18 @@ margin-bottom: 1px;
 }
 .mainbody{
 
-	margin:0%;
-	background-color:#eaeac3;
-	height:49rem;
+      margin:0%;
+      background-color:#eaeac3;
+      height:49rem;
 }
 .imgs{
-	height: 6rem;
+      height: 6rem;
     padding: 1rem;
 }
 
 ul
 {
-	list-style-type: none;
+      list-style-type: none;
     margin-left: 15%;
     padding-top: 1%;
     padding-left: 0%;
@@ -64,21 +64,21 @@ ul
     
 }
 #one{
-	
- background-color: #fbfbfb;	
+      
+background-color: #fbfbfb;   
 }
 #two{
-	  background-color: #4589bf;
+        background-color: #4589bf;
 }
 li a{
-	color:grey;
-	padding:1rem;
+      color:grey;
+      padding:1rem;
     float: left;
     padding-top:2%;
 }
 
 .footer {
- 	margin: -5%;
+     margin: -5%;
     position: fixed;
     left: 0%;
     bottom: 0%;
@@ -91,82 +91,82 @@ li a{
 
 
 h6{
-	margin-top:none;
-	text-size:1rem;
-	padding:0.5rem;
+      margin-top:none;
+      text-size:1rem;
+      padding:0.5rem;
 }
 
 .img1{
-	height: 11rem;
+      height: 11rem;
     margin-left: 0rem;
     width: 25rem;
- 
+
 }
 .image2{
     margin-left:5%;
-	border-right:1px solid #bbb;
-	height:11rem;
+      border-right:1px solid #bbb;
+      height:11rem;
 }
 .img2{
-	height: 4rem;
+      height: 4rem;
     padding: 1rem;
     margin-left: 0rem;
- 
+
 }
 .image3{
     margin-left:2rem;
-	border-right:1px solid #bbb;
-	height:11rem;
+      border-right:1px solid #bbb;
+      height:11rem;
 }
 .img3{
-	height: 4rem;
+      height: 4rem;
     padding: 1rem;
     margin-left: -1rem;
- 
-	
+
+      
 }
 .image4{
     margin-left:2rem;
-	border-right:1px solid #bbb;
-	height:11rem;
+      border-right:1px solid #bbb;
+      height:11rem;
 }
 .img4{
-	height: 4rem;
+      height: 4rem;
     padding: 1rem;
     margin-left: -1rem;
- 
+
 }
 .image5{
     margin-left:2rem;
-	border-right:1px solid #bbb;
-	height:11rem;
+      border-right:1px solid #bbb;
+      height:11rem;
 }
 .img5{
-	height: 4rem;
+      height: 4rem;
     padding: 1rem;
     margin-left: 0rem;
- ;
-	
+;
+      
 }
 .image6{
     margin-left:2rem;
-	border-right:1px solid #bbb;
-	height:11rem;
+      border-right:1px solid #bbb;
+      height:11rem;
 }
 .img6{
-	height: 4rem;
+      height: 4rem;
     padding: 1rem;
     margin-left: 0rem;
- 
 
-	
+
+      
 }
 .image7{
     margin-left:2rem;
     height:11rem;
 }
 .img7{
-	height: 4rem;
+      height: 4rem;
     padding: 1rem;
-	margin-left:0rem;
+      margin-left:0rem;
 }
