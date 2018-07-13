@@ -1,0 +1,19 @@
+.one{
+    height: 5rem;
+    background-color: grey;
+}
+
+.formstyle{
+    margin-top: 0.3rem;
+}
+div.ui-grid-header-cell-row {
+	background-color: #0375B4;
+	    color: white;
+    text-align: center;
+}
+div.ui-grid-canvas{
+	text-align: center;
+}
+div.model-header{
+	background-color: #0375B4;
+}

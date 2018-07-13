@@ -1,0 +1,153 @@
+<html>
+<head>
+  <title>
+    dashboard
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/template.css" rel="stylesheet">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  
+ 
+ <!--CDN css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.css">
+
+   
+
+
+  <!--CDN javaScripts-->
+
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-sanitize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-cookies.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.11.0/ui-bootstrap-tpls.js"></script>
+  <script src="js/controllers/template.js"></script>
+
+
+
+</head>
+
+
+
+<body ng-app="myApp" >
+	
+<div class="container-fluid" ng-controller="myController">
+		<div class="header row"><img class="imgs col-md-1" src="../images/NSDC logo.png" type="image/png"/>
+		<img class="imgs col-md-1" src="images/Image-of-Skill-India.png" type="image/png"/>
+		
+		
+		<nav class=" col-md-10 ultag_one">
+			<ul id="one">
+				<li><a ng-click="x='HOME'">HOME</a></li>
+				<li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
+				<li><a ng-click="x='webinar'">WEBINARS</a></li>
+				<li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
+				<li><a ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
+				<li><a ng-click="x='helpline'">HELPLINE</a></li>
+			
+				<li class="dropdown">
+	        		<a class="dropdown-toggle" data-toggle="dropdown" href="#">USER TYPE<span class="caret"></span></a>
+	            		<ul class="dropdown-menu">
+	          				<li><a href="#">STUDENT</a></li>
+	          				<li><a href="#">INDUSTRY</a></li>
+	          
+       		           </ul>
+      		     </li>
+			
+			
+					
+	  			</ul>
+	
+			</nav>
+		</div>
+		
+<div class="mainbody row">
+		
+	<div ng-switch on="x">
+
+		<div ng-switch-when="HOME">
+		<div ng-include src="'partials/home.html'"></div>
+		</div>
+		
+		<div ng-switch-when="SKILL COMPETITIONS">
+		<div ng-include src="'partials/skillc.html'"></div>
+		</div>
+		
+		<div ng-switch-when="webinar">
+		<div ng-include src="'partials/webinars.html'"></div>
+		</div>
+		
+		<div ng-switch-when="skillGapStudy">
+		<div ng-include src="'partials/skillGap.html'"></div>
+		</div>
+		
+		<div ng-switch-when="tendersAndRfps">
+		<div ng-include src="'partials/tenders.html'"></div>
+		</div>
+		
+		<div ng-switch-when="helpline">
+		<div ng-include src="'partials/helplines.html'"></div>
+		</div>
+		
+		
+		
+		<div ng-switch-when="jobRoles">
+		<div ng-include src="'partials/jobRoles.html'"></div>
+		</div>
+		
+		<div ng-switch-when="trainingMaterial">
+		<div ng-include src="'partials/trainingMaterial.html'"></div>
+		</div>
+		
+		<div ng-switch-when="trainingCentre">
+		<div ng-include src="'partials/trainingCentre.html'"></div>
+		</div>
+		
+		<div ng-switch-when="report">
+		<div ng-include src="'partials/report.html'"></div>
+		</div>
+		
+		<div ng-switch-when="govt">
+		<div ng-include src="'partials/govt.html'"></div>
+		</div>
+		
+		<div ng-switch-when="jobopp">
+		<div ng-include src="'partials/jobopp.html'"></div>
+		</div>
+		
+		</div>
+	</div>
+	
+	
+	<div class="footer row">
+
+           
+                      
+                      <div><img class="img1 col-md-3" src="images/want_to_be_skilled.png" type="image/png"/></div>
+                     <div style="cursor: pointer; color: white;"ng-click="x='jobRoles'" class="img-common image2 col-md-1"><img class="img2" src="images\job role.png" type="image/png"/><h6>Job Roles</h6></div>
+                     <div style="cursor: pointer; color: white;"ng-click="x='trainingMaterial'" class="img-common image3 col-md-1"><img class="img3" src="images\Find TC.png" type="image/png"/><label><h6>Find Training Partner</h6></label></div>
+                     <div style="cursor: pointer; color: white;"ng-click="x='trainingCentre'" class="img-common image4 col-md-1"><img class="img4" src="images\fund.png" type="image/png"/><label><h6>Training centre</h6></label></div>
+                     <div style="cursor: pointer; color: white;"ng-click="x='report'" class="img-common image5 col-md-1"><img class="img5" src="images\reports.png" type="image/png"/><label><h6>Report Issues</h6></label></div>
+                     <div style="cursor: pointer; color: white;"ng-click="x='govt'" class="img-common image6 col-md-1"><img class="img6" src="images\government.png" type="image/png"/><label><h6>Government</h6></label></div>
+                     <div style="cursor: pointer; color: white;"ng-click="x='jobopp'" class="img-common image7 col-md-1"><img class="img7" src="images\Job Opportunity.png" type="image/png"/><label><h6>Job Opportunity</h6></label></div>
+        </div>
+
+	
+	
+</div>
+</body>
+</html>
