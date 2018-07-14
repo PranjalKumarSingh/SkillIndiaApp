@@ -1,13 +1,13 @@
 
 <head>
    
-    <link type="text/css" href="css/jobRoles.css" rel="stylesheet">
+    <link type="text/css" href="../css/jobRoles.css" rel="stylesheet">
    
 
 </head>
 
 <body ng-app="">
-  <div class="container-fluid" ng-controller="">
+  <div class="container-fluid" ng-controller="jobRolesController">
         <br>
       <div id="letters">
            <div class="panel panel-default">
@@ -50,14 +50,14 @@
        <form class="form-horizontal" ng-submit="submit" role="form" name="training" novalidate>
         <div class="form-group" ng-class="{'has-error': training.search.$touched && training.search.$error.required , 'has-success': studentForm.search.$valid }">
             <label for="search"></label>
-            <div class="col-sm-6" id="searchbox">
+            <div class="col-md-6" id="searchbox">
                 <input type="text"  placeholder="Please enter a job role for search"  name="search" class="form-control" ng-model="searchBox" required />
             </div>
             
-             <div class="col-sm-2">  <input type="submit"  value="search" class="btn btn-primary col-sm-offset-3" /></div>
+             <div class="col-md-2">  <input type="submit"  value="search" class="btn btn-primary col-sm-offset-3" /></div>
 
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3">
                 <span class="help-block" ng-show="training.search.$touched && training.search.$error.required">
                 <center><p style="color: red;"> Please enter a job role </p>
                 </center></span>

@@ -11,7 +11,7 @@ var app = angular.module('', ['ui.grid',
 
 
 
-app.controller('',function($scope, $http) {
+app.controller('jobOpportunity',function($scope, $http) {
 	$scope.showingInterestForm=false;
 	
     $scope.details = {

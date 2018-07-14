@@ -2,7 +2,7 @@
  <link rel="stylesheet" href="../css/jobopp.css">
 </head>
 
-<div class="container-fluid" ng-app="">
+<div class="container-fluid">
 
  	            <div class="row">
  	            <form class="form-inline">
@@ -18,7 +18,7 @@
                 	</form>
             	</div>
 
-	<div ng-controller="" >
+	<div ng-controller="jobOpportunity" >
       <div class="table">
     		<h4> Recent Job Opportunity</h4>
     		<div ui-grid="details" ui-if="details.data.length>0" class="grid grid-align " ui-grid-auto-resize ng-style="getTableHeight()"></div> 
