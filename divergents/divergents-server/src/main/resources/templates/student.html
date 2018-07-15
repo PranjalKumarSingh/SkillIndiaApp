@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head><title>dashboard</title>
-<link type="text/css" href="css/student.css" rel="stylesheet"/>
+
 
 <!--CDN css-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.0.6/ui-grid.css">
+        <link rel ='stylesheet' type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+        <link type="text/css" href="css/student.css" rel="stylesheet"/>
 
    
    
@@ -35,36 +37,46 @@
 <body ng-app="myApp" >
 	
 <div class="container-fluid" ng-controller="myController">
-		<div class="header row"><img class="imgs col-md-1" src="../images/NSDC logo.png" type="image/png"/>
-		<img class="imgs col-md-1" src="images/Image-of-Skill-India.png" type="image/png"/>
-		
-		
-		<nav class=" col-md-10 ultag_one">
-			<ul id="one">
-				<li><a ng-click="x='HOME'">HOME</a></li>
+<header>
+<nav class="navbar navbar-default">
+  <div>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">
+		<img src="../images/NSDC logo.png" type="image/png"/>
+		<img src="images/Image-of-Skill-India.png" type="image/png"/>
+		</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        	<li><a ng-click="x='HOME'">HOME</a></li>
 				<li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
 				<li><a ng-click="x='webinar'">WEBINARS</a></li>
 				<li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
 				<li><a ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
 				<li><a ng-click="x='helpline'">HELPLINE</a></li>
-			
-				<li class="dropdown">
-	        		<a class="dropdown-toggle" data-toggle="dropdown" href="#">USER TYPE<span class="caret"></span></a>
-	            		<ul class="dropdown-menu">
-	          				<li><a href="#">STUDENT</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USER TYPE <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">STUDENT</a></li>
 	          				<li><a href="#">INDUSTRY</a></li>
-	          
-       		           </ul>
-      		     </li>
-			
-			
-					
-	  			</ul>
-	
-			</nav>
-		</div>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+		</header>
 		
-<div class="mainbody row">
+<div class="mainbody">
 		
 	<div ng-switch on="x">
 
@@ -122,7 +134,7 @@
 	</div>
 	
 	
-	<div class="footer row">
+	<div class="footer">
 
            
                       
