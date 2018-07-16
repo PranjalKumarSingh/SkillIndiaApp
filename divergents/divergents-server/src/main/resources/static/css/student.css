@@ -11,6 +11,11 @@ padding:1rem;
 
 .navbar{
 margin-bottom: 1px;
+
+}
+ul.nav.navbar-nav.navbar-right{
+	    font-size: 83%;
+	
 }
 
 .dropdown{
@@ -62,8 +67,11 @@ background-color: #fbfbfb;
         background-color: #4589bf;
 }
 .navbar-brand>img {
-    display: inline;
-    width: 12%;
+    display: flex;
+    width: 50%;
+    heigth:2%;
+    
+   
 }
 .container-fluid {
     padding-right: 0;
