@@ -37,7 +37,7 @@ margin-bottom: 1px;
 }
 
 .dropdown-menu {
-    position: absolute;
+ 
     top: 58%;
     left: 561px;
     z-index: 1000;
@@ -65,12 +65,10 @@ margin-bottom: 1px;
 
 ul
 {
-      list-style-type: none;
+      
     margin-left: 15%;
-    padding-top: 1%;
-    padding-left: 0%;
     overflow: hidden;
-    background-color: #ffffff;
+   
     
 }
 #one{
@@ -80,12 +78,7 @@ background-color: #fbfbfb;
 #two{
         background-color: #4589bf;
 }
-li a{
-      color:grey;
-      padding:1rem;
-    float: left;
-    padding-top:2%;
-}
+
 
 .footer {
    
@@ -107,7 +100,7 @@ h6{
 
 .img1{
       height: 11rem;
-    margin-left: 0rem;
+    margin-left: -2rem;
   
 
 }
