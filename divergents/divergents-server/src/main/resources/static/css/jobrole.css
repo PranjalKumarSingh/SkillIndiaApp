@@ -1,0 +1,105 @@
+.container-fluid{
+
+       padding-left: 5rem;
+
+    padding-right: 2rem;
+
+    padding-top: 1rem;
+
+    margin-left: -4rem;
+
+}
+
+ 
+
+.panel-default{
+
+        padding-bottom: 7rem;
+
+    margin-top: 1rem;
+
+    padding-left: 5rem;
+
+    height: 0rem;
+
+    padding-top: 0rem;
+
+}
+.form-horizontal .form-group {
+    margin-right: 62px;
+    margin-left: -6px;
+}
+.col-sm-2 {
+    width: 1.666667%;
+    margin-left: -3rem;
+}
+.col-sm-3 {
+    width: 20%;
+ 
+    margin: -15px;
+}
+
+li a {
+    color: grey;
+    padding: 1rem;
+    float: left;
+    padding-top: 5%;
+    padding-left: 1%;
+}
+
+h4{
+    padding: -1rem;
+    color: #d2691e;
+}
+.table {
+    background-color: #f0f8ff;
+    color: #000000;
+    padding: 2%;
+    margin-top: 2rem;
+    }
+.ui-grid-header-cell{
+  text-align: center;
+  background-color: #0375b4;
+  color:#ffffff;
+}
+.ui-grid-row:nth-child(odd) .ui-grid-cell {
+  background-color: #ffffff;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color:#f2f2f2;
+}
+.ui-grid-cell{
+  text-align: center;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #d4d4d4;
+}
+.list-inline {
+    padding-left: 3rem;
+    margin-left: -3rem;
+    margin-top: -1rem;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 6pt;
+    padding-left: 1pt;
+    border-right: 1pt solid black;
+    webkit-padding-end: 1rem;
+}
+
+ 
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-size: 11.5pt;
+}
+    
+.
+.form-control{
+
+        width: 50rem;
+
+}
+
+ 
