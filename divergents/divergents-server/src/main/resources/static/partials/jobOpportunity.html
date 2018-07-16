@@ -1,9 +1,89 @@
 <head>
-	<link href="css/jobOpportunity.css" type="text/css" rel="stylesheet">
+    <link href="css/jobOpportunity.css" type="text/css" rel="stylesheet">
 </head>
 
 <div ng-controller="jobOpportunityController">
 
-	<!-- Write your code here -->
-	
+    <!-- Write your code here -->
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <form class="form-inline" name="formValidation">
+
+                <input class="form-control" id="name" type="text" ng-model="name" placeholder="Enter Job role">
+
+                <input class="form-control" id="location" type="text" ng-model="location" placeholder="Enter Location">
+
+                <button type="button" class="btn btn-primary" ng-click="search()">Search</button>
+              <!--   <p class="errormessage" ng-bind="errorMessage">{{errorMessage}}</p> -->
+            </form>
+
+        </div>
+
+        <div class="table">
+            <h4> Recent Job Opportunity</h4>
+            <div ui-grid="details" ui-if="details.data.length>0" class="grid grid-align " ui-grid-auto-resize ng-style="getTableHeight()"></div>
+           <!--  <div ui-grid="details" class="grid grid-align " ui-grid-auto-resize ></div> -->
+        </div>
+
+        <!-- Modal -->
+
+        <div class="modal fade in">
+            <div class="modal-dialog " ng-show="showingInterestForm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" ng-click="closeForm()">&times;</button>
+                        <h4 class="modal-title">Registration Form</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-8">
+                                <form>
+                                    <div class="form-group">
+
+                                        <label class="control-label" for="name">Name : </label>
+                                        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" placeholder="Email Address" required>
+
+                                        <label>Contact: </label>
+                                        <input type="number" class="form-control" placeholder="Enter your Contact number" required>
+
+                                        <input type="submit" value="Submit">
+
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" ng-click="closeForm()">Close</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Modal closed -->
+
+        <div class="row">
+            <div class="col-md-4 help">
+                <b>Need Help in finding the right career options?</b>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="btn btn-primary" role="button">Connect with Mentor</a>
+            </div>
+        </div>
+
+    </div>
+
 </div>
