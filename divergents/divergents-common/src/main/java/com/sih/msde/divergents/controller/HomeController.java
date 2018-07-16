@@ -8,7 +8,7 @@ public class HomeController {
 	
 	@RequestMapping("/")
 	public String homeController() {
-		return "skillIndiaApp";
+		return "index";
 	}
 
 }
