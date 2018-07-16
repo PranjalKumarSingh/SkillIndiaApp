@@ -4,6 +4,45 @@
 
 <div ng-controller="skillGapStudyController">
 
-	<!-- Write your code here -->
+<h4>Skill Gap Study</h4	>
 	
+	<div class="row">
+		<div class="btn-group btn-group-justified" role="group">
+			<div class="btn-group" role="group">
+    			<button type="button" class="btn btn-primary" ng-click="x='statewise'">State Wise</button>
+  			</div>
+  			<div class="btn-group" role="group">
+    			<button type="button" class="btn btn-primary" ng-click="x='industrywise'">Industry Wise</button>
+  			</div>
+  			<div class="btn-group" role="group">
+    			<button type="button" class="btn btn-primary" ng-click="x=''">Analysis</button>
+  			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div class="skillGap3div col-md-6" ng-switch="x">
+		<div ng-switch-when="statewise" >
+			<p> </p>
+			<select ng-model="selectedstate"  ng-options="x for x in states" class="form-control" ></select>
+			<!-- <div ui-grid="statesSkillGapStudy" class="grid grid-align " ui-grid-auto-resize></div>-->
+		</div>
+		<div ng-switch-when="industrywise">
+		<p> </p>
+		<select ng-model="selectedindustry" ng-options="x for x in industry"  class="form-control" ></select>
+			<!-- <div ui-grid="industrySkillGapStudy1" class="grid grid-align " ui-grid-auto-resize></div>-->
+		</div> 
+		<div ng-switch-when="analysis">
+			
+		</div>		
+	</div>
+	<div class= "col-md-6">
+		<br>
+		<h3 id="change"><b>Wish to Contribute with Suggestions?</b></h3>
+		<br> <button type="button" class="btn submitButton">SUBMIT IDEA</button> 
+		
+	</div>
 </div>
+	

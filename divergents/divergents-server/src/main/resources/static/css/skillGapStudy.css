@@ -1,0 +1,90 @@
+.submitButton{
+	background-color: black;
+	color: white;
+}
+
+#statewiseSkillGap{
+	height:100%;
+	background-color:blue;
+}
+#industrywiseSkillGap{
+	height:100%;
+	background-color:red;
+}
+
+.active-button{
+	background-color: blue;
+}
+button, select {
+    text-transform: none;
+    width: 33%;
+    margin-left: 6%;
+}
+.h1,.h2, .h3, {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+#change
+{
+     color: brown;
+ margin-right:10%;
+ text-align:right ;
+ margin-top:30%;
+ font-size:150%;
+ 
+}
+#btnchange
+{
+	text-align:center right;
+	background-color:#EEEEEE;
+	width:13%;
+	padding-right:0%;
+	margin-left:0%
+	margin-right: 18%;
+}
+.btn-primary
+ {
+     background-color: lightgray;
+border:inherit;
+ color: #2971b1;
+    font-size: 100%
+}
+
+
+/*button, select {
+    text-transform: none;
+    width: 33%;
+    margin-left: 6%;
+    margin-right: 18%;
+}*/
+.submitButton{
+   background: black;
+    color: white;
+    font-size: 100%
+  
+    }
+  
+  .statewiseBtn{
+  background-color:gray;
+  border:inherit;
+ 
+  }
+  
+   .industryBtn{
+    background-color:gray;
+  border:inherit;
+  color:blue;
+
+   }
+   .analysisBtn{
+    background-color:gray;
+  border:inherit;
+  color:blue;
+  
+  
+   }
+   .heading{
+   }
+   
+   
