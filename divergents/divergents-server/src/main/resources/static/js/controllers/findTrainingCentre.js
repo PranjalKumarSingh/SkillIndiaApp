@@ -1,16 +1,16 @@
 var app = angular.module('skillIndiaApp');
-app.controller('findTCController', function($scope){
+app.controller('findTCController', function($scope,$http){
 	$scope.details = {
-	        enableGridMenus: false,
-	        enableSorting: false,
-	        enableFiltering: false,
-	        enableCellEdit: false,
-	        enableColumnMenus: false,
-	        enableHorizontalScrollbar: 0,
-	        enableVerticalScrollbar: 0,
-	        paginationPageSizes: [5, 10, 20, 30],
-	        paginationPageSize: 10,
-	        useExternalPagination: true,
+			 enableGridMenus: false,
+		        enableSorting: false,
+		        enableFiltering: false,
+		        enableCellEdit: false,
+		        enableColumnMenus: false,
+		        enableHorizontalScrollbar: 0,
+		        enableVerticalScrollbar: 0,
+		        paginationPageSizes: [5, 10, 20, 30],
+		        paginationPageSize: 10,
+		        useExternalPagination: true,
 
 	        columnDefs: [
 	            {
@@ -43,6 +43,6 @@ app.controller('findTCController', function($scope){
 });
 
     
- console.log("working..");
+ 
    
  	
