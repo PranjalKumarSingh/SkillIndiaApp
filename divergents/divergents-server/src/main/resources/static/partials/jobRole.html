@@ -4,6 +4,78 @@
 
 <div ng-controller="jobRoleController">
 
-	<!-- Write your code here -->
+ <div class="container-fluid">
+<div id="letters">
+        <div class="panel panel-default">
+            <div class="panel-body"></div>
+                 <ul class="list-inline">
+       
+			<li><a ng-click="x='A'; search(x)">A</a></li>
+			<li><a ng-click="x='B'; search(x)">B</a></li>
+			<li><a ng-click="x='C'; search(x)">C</a></li>
+			<li><a ng-click="x='D'; search(x)">D</a></li>
+			<li><a ng-click="x='E'; search(x)">E</a></li>
+			<li><a ng-click="x='F'; search(x)">F</a></li>
+			<li><a ng-click="x='G'; search(x)">G</a></li>
+			<li><a ng-click="x='H'; search(x)">H</a></li>
+			<li><a ng-click="x='I'; search(x)">I</a></li>
+			<li><a ng-click="x='J'; search(x)">J</a></li>
+			<li><a ng-click="x='K'; search(x)">K</a></li>
+			<li><a ng-click="x='L'; search(x)">L</a></li>
+			<li><a ng-click="x='M'; search(x)">M</a></li>
+			<li><a ng-click="x='N'; search(x)">N</a></li>
+			<li><a ng-click="x='O'; search(x)">O</a></li>
+			<li><a ng-click="x='P'; search(x)">P</a></li>
+			<li><a ng-click="x='Q'; search(x)">Q</a></li>
+			<li><a ng-click="x='R'; search(x)">R</a></li>
+			<li><a ng-click="x='S'; search(x)">S</a></li>
+			<li><a ng-click="x='T'; search(x)">T</a></li>
+			<li><a ng-click="x='U'; search(x)">U</a></li>
+			<li><a ng-click="x='V'; search(x)">V</a></li>
+			<li><a ng-click="x='W'; search(x)">W</a></li>
+			<li><a ng-click="x='X'; search(x)">X</a></li>
+			<li><a ng-click="x='Y'; search(x)">Y</a></li>
+			<li><a ng-click="x='Z'; search(x)">Z</a></li>					
+					
+	  </ul>
+      </div>
+</div>
+       
+        
+<div class="training material">
+       <form class="form-horizontal" ng-submit="#" role="form" name="training" novalidate>
+        <div class="form-group" ng-class="{'has-error': training.search.$touched && studentForm.search.$error.required , 'has-success': training.search.$valid }">
+            <label for="search" class="col-sm-3 control-label"></label>
+            <div class="col-sm-6" id="searchbox">
+                <input type="text"  placeholder="Please enter a job role for search"  name="search" class="form-control" ng-model="searchBox" required />
+            </div>
+            
+             <div class="col-sm-2">  <input type="submit"  value="search" class="btn btn-primary col-sm-offset-3" /></div>
+
+        </div>
+        <div class="col-sm-3">
+                <span class="help-block" ng-show="training.search.$touched && training.search.$error.required">
+             <p style="color:red;">Please enter a job role</p></span>
+        </div>
+       
+       </form>
+</div>
+      
+         <div class="table">
+   
+    		  <div ui-grid="gridJobRoles" ui-if="gridJobRoles.data.length>0" class="grid grid-align" id="grid" ui-grid-auto-resize ng-style="getTableHeight()"></div> 
+    	</div>
+    	
+  
+<div class="modal" id="loginModal" >
+ 
+       <div class="model-content">
+      
+       <div ui-grid="gridTrainingCenterDetails" ui-if="gridTrainingCenterDetails.data.length>0" class="grid grid-align"  ui-grid-auto-resize ng-style="getTableHeight()"></div> 
+          <button type="button" class="btn btn-success pull-right" data-dismiss="modal">OK</button>
+   
+      </div>
+   </div>
+	</div>
 	
 </div>

@@ -4,6 +4,34 @@
 
 <div ng-controller="trainingMaterialController">
 
-	<!-- Write your code here -->
+    <div class="text1">
+               <h4> Training Material</h4>
+        </div>
+        
+        <div class="text2">
+             <h5> NSDC and various sector skill councils publish relevant training material which can be used for preparation before assessments.</h5>
+        </div>
+        <br>
+        <div class="training material">
+                   <form class="form-horizontal" ng-submit="submit()" role="form" name="training" novalidate>
+          <div class="form-group" ng-class="{'has-error': training.search.$touched && studentForm.search.$error.required , 'has-success': studentForm.search.$valid }">
+            <label for="search" class="col-sm-3 control-label"></label>
+            <div class="col-sm-4" id="searchbox">
+                <input type="text"  placeholder="Please enter a job role for search"  name="search" class="form-control" ng-model="search" required />
+            </div>
+            
+             <div class="col-sm-2">  <input type="submit"  value="search" class="btn btn-primary col-sm-offset-3" /></div>
+
+        </div>
+              <div class="col-sm-3">
+                <span class="help-block" ng-show="training.search.$touched && training.search.$error.required">Please enter a job role</span>
+              </div>
+                  </form>
+         </div>
+       <div class="table">
+       <div ui-grid="gridTraining" class="grid grid-align" id="grid" ui-grid-auto-resize></div>
+ 
+	</div>
+	</div>
 	
-</div>
+	
