@@ -1,4 +1,9 @@
-var app = angular.module('skillIndiaApp',['ngRoute']);
+var app = angular.module('skillIndiaApp',['ngRoute','ui.grid',
+                                          'ui.grid.edit',
+                                          'ui.grid.cellNav',
+                                          'ui.grid.autoResize',
+                                          'ui.bootstrap',
+                                          'ui.grid.pagination']);
 
 
 //Application Configuration
