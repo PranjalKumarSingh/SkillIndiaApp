@@ -41,6 +41,7 @@ app.controller('findTCController', function($scope,$http){
 	    	 $scope.details.data= response.data;
 
 });
+});    
 
     
  
