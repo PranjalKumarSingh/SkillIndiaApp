@@ -12,7 +12,9 @@ margin:0;
 .navbar{
 margin-bottom: 1px;
 }
-
+.collapse{
+    font-size: 80%;
+}
 .dropdown{
       position: relative;
       
