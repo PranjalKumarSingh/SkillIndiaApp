@@ -40,7 +40,7 @@ app.controller('trainingMaterialController', function($scope,$http){
     };
     
 	    
-    $http.get('/staticJson/trainingmaterial.json')
+    $http.get('/')
     .then(function (response) {
     	console.log("Working ui grid");
     	 $scope.gridTraining.data= response.data;
