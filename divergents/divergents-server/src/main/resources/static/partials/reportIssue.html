@@ -6,4 +6,67 @@
 
 	<!-- Write your code here -->
 	
+	
+	<div class="container-fluid">
+    <div class="col-sm-10">
+    <h3 id="color"> Report Issues</h3>
+    </div>
+<div class="container">
+    <div class="4fields">
+    <div id="r1" class="col-sm-5">
+	 <form name="myForm">
+        <div class="form-group">
+      <label for="CName">Candidate Name:</label>
+      <input type="text" name="CName" ng-model="CName" required class="form-control" placeholder="Enter Candidate Name">
+     <span  style="color:red;" ng-show="myForm.CName.$touched && myForm.CName.$invalid">The name is required</span>
+    </div>
+      <div class="dropdown">
+        <label for="Issue with">Issue with</label>
+        <select class="dropdown" name="">Select
+          <option value=""></option>
+          </select>
+            </div> 
+    <div id="b2" class="form-group">
+    <label for="IName">Institute Name:</label>
+      <input type="text" name="instituteName" ng-model="instituteName"   required class="form-control" placeholder="Enter Institute Name">
+       <span  style="color:red;" ng-show="myForm.instituteName.$touched && myForm.instituteName.$invalid">Please fill the field</span>
+    </div>
+  </form>
+    </div>
+        <div  id="r2" class="col-sm-5">
+         <form name="myForm1">
+    <div class="form-group">
+      <label for="CId">Candidate Id:</label>
+      <input type="text" name="CId" ng-model="CId" required class="form-control" placeholder="Enter Candidate ID">
+       <span  style="color:red;" ng-show="myForm1.CId.$touched && myForm1.CId.$invalid">Please fill the field</span>
+    </div>
+      <div class="dropdown">
+        <label for="Issue type">Issue type</label>
+                    <select class="dropdown" name="">Select
+          <option value=""></option>
+          </select>
+            </div>
+    <div id="b2" class="form-group">
+    <label for="IId">Institution Id:</label>
+      <input type="text" name="IId" ng-model="IId" required class="form-control" placeholder="Enter Institution ID">
+       <span style="color: red;" ng-show="myForm1.IId.$touched && myForm1.IId.$invalid">Please fill the field</span>
+						</div>  
+             
+        </form>
+        </div>
+      
+	</div>
+<div id="f1">
+    <form>
+        <label for="IDescrp">Issue Description</label><br>
+        <textarea name="message" rows="3" cols="114" placeholder="Enter Issue Description"></textarea>
+    </form>
+ 
+    <div id="b1" class="col-sm-12">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
 </div>
+</div>
+</div>
+
+	

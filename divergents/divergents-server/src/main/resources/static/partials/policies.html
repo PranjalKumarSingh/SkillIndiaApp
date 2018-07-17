@@ -6,4 +6,57 @@
 
 	<!-- Write your code here -->
 	
+	<div class="container-fluid">
+    <div id="letters">
+    <div class="panel panel-default">
+  <div class="panel-body"></div>
+  <ul class="list-inline">
+        <li><a ng-click="x='A'; search(x)">A</a></li>
+        <li><a ng-click="x='B'; search(x)">B</a></li>
+        <li><a ng-click="x='C'; search(x)">C</a></li>
+        <li><a ng-click="x='D'; search(x)">D</a></li>
+        <li><a ng-click="x='E'; search(x)">E</a></li>
+        <li><a ng-click="x='F'; search(x)">F</a></li>
+        <li><a ng-click="x='G'; search(x)">G</a></li>
+        <li><a ng-click="x='H'; search(x)">H</a></li>
+        <li><a ng-click="x='I'; search(x)">I</a></li>
+        <li><a ng-click="x='J'; search(x)">J</a></li>
+        <li><a ng-click="x='K'; search(x)">K</a></li>
+        <li><a ng-click="x='L'; search(x)">L</a></li>
+        <li><a ng-click="x='M'; search(x)">M</a></li>
+        <li><a ng-click="x='N'; search(x)">N</a></li>
+        <li><a ng-click="x='O'; search(x)">O</a></li>
+        <li><a ng-click="x='P'; search(x)">P</a></li>
+        <li><a ng-click="x='Q'; search(x)">Q</a></li>
+        <li><a ng-click="x='R'; search(x)">R</a></li>
+        <li><a ng-click="x='S'; search(x)">S</a></li>
+        <li><a ng-click="x='T'; search(x)">T</a></li>
+        <li><a ng-click="x='U'; search(x)">U</a></li>
+        <li><a ng-click="x='V'; search(x)">V</a></li>
+        <li><a ng-click="x='W'; search(x)">W</a></li>
+        <li><a ng-click="x='X'; search(x)">X</a></li>
+        <li><a ng-click="x='Y'; search(x)">Y</a></li>
+        <li><a ng-click="x='Z'; search(x)">Z</a></li>
+ 
+        </ul>
+</div>
+</div>
+    <form>
+
+  <div class="form-group">
+  
+    <input type="text" name="document" class="form-control" ng-model="myform" required placeholder="Please enter name of document to search">
+             <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+             </form>
+        
+        <div class="container">
+        <div>
+            <div class="table">
+				<div ui-grid="details" style="height:20pt" class="grid grid-align" ui-grid-auto-resize></div>
+    </div>
+        </div>
+    </div>
+    </div>
+   
 </div>
