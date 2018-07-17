@@ -23,7 +23,18 @@ margin-bottom: 1px;
     color: #333;
     background-color: #fdfdfd;
 }
-
+.skillindialogo
+{
+	    width: 4rem;
+    margin-left: 6rem;
+    margin-top: 0.7rem;
+}
+.nsdcindia
+{
+	    width: 4rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+}
 .btn{
       display: flex;
     margin-bottom: 0;
@@ -49,6 +60,10 @@ margin-bottom: 1px;
       margin:0%;
       background-color:#fff;
       height:49rem;
+}
+.navbar-header{
+	display: flex;
+    margin-left: 3rem;
 }
 .imgs{
       height: 6rem;

@@ -5,7 +5,7 @@
 <div ng-controller="industryController">
 	<header>
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-12" style="padding: 0rem;height: 5rem">
 
 
 
@@ -13,7 +13,7 @@
 
 <nav class="navbar navbar-default">
 <div class="col-md-2">
-  <div>
+  <div class="row">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -22,36 +22,57 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand">
-      <div class="col-md-6">
-		<img src="../images/NSDC logo.png" type="image/png" style="width: 4rem;"></div>
-		<div class="col-md-6">
-		<img src="images/Image-of-Skill-India.png" type="image/png" style="width: 3rem;"></div>
+      <a class="" >
+      <a href="https://www.nsdcindia.org">
+      
+      <div class="row col-md-6" style="margin-left: 1rem;margin-top: 1.2rem" >
+		<img  src="images/NSDC logo.png" type="image/png" style="width: 4rem"></div></a>
+	
+	   <a href="http://www.skillindia.gov.in">
+		
+		<div class="row col-md-6" style="margin-left: 4rem; margin-top: 0.7rem">
+		<img src="images/Image-of-Skill-India.png" type="image/png" style="width: 4rem;"></div></a>
+	
+		
+		
 		</a>
     </div>
 </div>
 </div>
 
 <div class="col-md-10">
+
     <!-- Collect the nav links, forms, and other content for toggling -->
+    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+    
       <ul class="nav navbar-nav navbar-right">
-        	<li><a ng-click="x='HOME'">HOME</a></li>
-				<li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
-				<li><a ng-click="x='webinar'">WEBINARS</a></li>
-				<li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
-				<li><a ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
-				<li><a ng-click="x='helpline'">HELPLINE</a></li>
+      
+        		<li><a style="cursor: pointer; ng-click="x='HOME'">HOME</a></li>
+				<li><a style="cursor: pointer; ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
+				<li><a style="cursor: pointer; ng-click="x='webinar'">WEBINARS</a></li>
+				<li><a style="cursor: pointer; ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
+				<li><a style="cursor: pointer; ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
+				<li><a style="cursor: pointer; ng-click="x='helpline'">HELPLINE</a></li>
+				
         <li class="dropdown">
+        
+         <!-- <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USER TYPE <span class="caret"></span></a> --> 
+          
           <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USER TYPE <span class="caret"></span></a>
+          
           <ul class="dropdown-menu">
-            <li><a>STUDENT</a></li>
-	          				<li><a>INDUSTRY</a></li>
-          </ul>
+            <li><a  ng-click="students()">STUDENT</a></li>
+	        <li><a ng-click="industry()">INDUSTRY</a></li>
+         </ul>
+         
         </li>
+        
       </ul>
+      
       </div>
-      </div>
+      
+    </div>
       
     </nav><!-- /.navbar-collapse -->
     </div>
@@ -62,7 +83,7 @@
             <div ng-switch="" on="x">
 
             <div ng-switch-when="HOME">
-            <div ng-include="" src="'partials/home.html'"></div>
+            <div ng-include="" src="'partials/quickFacts.html'"></div>
             </div>
             
             <div ng-switch-when="SKILL COMPETITIONS">
@@ -92,7 +113,7 @@
             </div>
             
             <div ng-switch-when="Quick Facts">
-            <div ng-include="" src="'partials/home.html'"></div>
+            <div ng-include="" src="'partials/quickFacts.html'"></div>
             </div>
             
             <div ng-switch-when="Sector Skill Council">
