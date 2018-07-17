@@ -1,5 +1,5 @@
 var app = angular.module('skillIndiaApp');
-app.controller('reportIssueController', function($scope,$http){
+app.controller('policiesController', function($scope,$http){
 	
 	
 	$scope.details = {
