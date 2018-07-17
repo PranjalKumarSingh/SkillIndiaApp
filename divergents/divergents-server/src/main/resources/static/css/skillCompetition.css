@@ -1,0 +1,69 @@
+
+.row1{
+	height: 0.3rem;
+}
+.row2{
+	 height: 0.3rem;
+}
+.row3{
+	 height: 0.3rem;
+}
+
+#t2{
+	text-align: center;
+	color: white;
+	
+}
+
+#a1
+{
+	color: #A07266;
+	margin-left: 2rem;
+}
+#t4
+{
+	display: flex;
+	
+}
+#t6
+{
+	margin-left: 15rem;
+	height: 4%;
+}
+#a2
+{
+	color: red;
+}
+#s1
+{
+height: 3.7rem;
+}
+#s2
+{
+	height: 3.2rem;
+}
+.btn 
+{
+font-size: 12px;
+margin-left: 3rem;
+}
+#s3
+{
+	margin-left: 4rem;
+	
+}
+#s4
+{
+		margin-left: 10rem;
+	
+}
+#s6
+{
+	color: #7BA9DC;
+}
+
+
+
+
+
+	
