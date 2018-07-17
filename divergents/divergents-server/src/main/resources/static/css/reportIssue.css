@@ -1,8 +1,8 @@
 #color{
     text-align: left;
     color:dodgerblue;
-    padding-left:5rem;
-	    margin-left: -5rem;
+   padding-left: 9rem;
+    margin-left: -9rem;
 }
 
 .4fields{
@@ -18,12 +18,16 @@
 .dropdown{
     width:50%;
 	    border-radius: 2rem;
+	    margin-left: 0rem;
+    margin-bottom: -1rem;
 }
 
 .form-control{
         width: 35rem;
+            margin-left: -4rem;
 }
-.col-md-12{
+}
+.col-sm-12{
 	 padding-left: 10rem;
 }
 #b1{
@@ -36,13 +40,16 @@
 }
 #r1{
 	        margin-left: -2rem;
+	        padding-left: 5rem;
 }
 #r2{
-	padding-left: 8rem;
+	padding-left: 7rem;
 	margin-right: 2rem;
 }
 #f1{
 	        margin-left: 2rem;
 }
-
+#d1{
+	
+}
 
