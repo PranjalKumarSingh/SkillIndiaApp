@@ -3,17 +3,15 @@
 </head>
 
 <div ng-controller="reportIssueController">
-
-	<!-- Write your code here -->
 	
 	
 	<div class="container-fluid">
-    <div class="col-sm-10">
+    <div class="col-sm-12">
     <h3 id="color"> Report Issues</h3>
     </div>
 <div class="container">
     <div class="4fields">
-    <div id="r1" class="col-sm-5">
+    <div id="r1" class="col-sm-6">
 	 <form name="myForm">
         <div class="form-group">
       <label for="CName">Candidate Name:</label>
@@ -28,12 +26,12 @@
             </div> 
     <div id="b2" class="form-group">
     <label for="IName">Institute Name:</label>
-      <input type="text" name="instituteName" ng-model="instituteName"   required class="form-control" placeholder="Enter Institute Name">
+      <input type="text" name="instituteName" ng-model="instituteName" required class="form-control" placeholder="Enter Institute Name">
        <span  style="color:red;" ng-show="myForm.instituteName.$touched && myForm.instituteName.$invalid">Please fill the field</span>
     </div>
   </form>
     </div>
-        <div  id="r2" class="col-sm-5">
+        <div  id="r2" class="col-sm-6">
          <form name="myForm1">
     <div class="form-group">
       <label for="CId">Candidate Id:</label>
@@ -54,18 +52,18 @@
              
         </form>
         </div>
+      </div>
       
-	</div>
-<div id="f1">
-    <form>
+       <div id="f1">
+       <form>
         <label for="IDescrp">Issue Description</label><br>
-        <textarea name="message" rows="3" cols="114" placeholder="Enter Issue Description"></textarea>
+        <textarea name="message" rows="3" cols="115" placeholder="Enter Issue Description"></textarea>
     </form>
- 
+ </div>
     <div id="b1" class="col-sm-12">
     <button type="submit" class="btn btn-primary">Submit</button>
     </div>
-</div>
+
 </div>
 </div>
 
