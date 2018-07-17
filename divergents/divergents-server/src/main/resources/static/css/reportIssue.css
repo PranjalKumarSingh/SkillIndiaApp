@@ -1,0 +1,48 @@
+#color{
+    text-align: left;
+    color:dodgerblue;
+    padding-left:5rem;
+	    margin-left: -5rem;
+}
+
+.4fields{
+    display: flex;
+    margin-left:1rem;
+}
+
+.btn-primary{
+	    font-size: 8pt;
+    border-radius: 3pt;
+    margin-left: 35rem;
+}
+.dropdown{
+    width:50%;
+	    border-radius: 2rem;
+}
+
+.form-control{
+        width: 35rem;
+}
+.col-md-12{
+	 padding-left: 10rem;
+}
+#b1{
+	text-align: center;
+
+}
+
+#b2{
+	margin-top:1rem;
+}
+#r1{
+	        margin-left: -2rem;
+}
+#r2{
+	padding-left: 8rem;
+	margin-right: 2rem;
+}
+#f1{
+	        margin-left: 2rem;
+}
+
+

@@ -1,0 +1,67 @@
+.container-fluid{
+       padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    margin-left: -4rem;
+}
+
+.panel-default{
+        padding-bottom: 7rem;
+    margin-top: 1rem;
+    padding-left: 5rem;
+    height: 0rem;
+    padding-top: 0rem;
+}
+.btn-primary{
+	margin-left: 375pt;
+    font-size: 12pt;
+    margin-top: -25pt;
+    border-radius: 3pt;
+}
+
+
+
+.form-control{
+        width: 50rem;
+}
+
+.table{
+   background-color: #f0f8ff;
+    color: #000000;
+    padding: 3%;
+    margin: 4rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
+    height: 154pt;
+
+}
+
+.ui-grid-header-cell{
+  text-align: center;
+  background-color: #0375b4;
+  color:#ffffff;  
+}
+.ui-grid-row:nth-child(odd) .ui-grid-cell {
+  background-color: #ffffff;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color:#f2f2f2;
+}
+.ui-grid-cell{
+  text-align: center;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #d4d4d4;
+}
+.list-inline{
+	padding-left: 1rem;
+    margin-left: -4rem;
+        margin-top: -2rem;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 0pt;
+    padding-left: 1pt;
+    border-right: 1pt solid black;
+    webkit-padding-end: 1rem;
+}
