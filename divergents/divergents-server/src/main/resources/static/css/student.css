@@ -17,6 +17,24 @@ ul.nav.navbar-nav.navbar-right{
 	    font-size: 83%;
 	
 }
+.btn1-default {
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+.btn1{
+      display: flex;
+    margin-bottom: 0;
+    font-size: 6px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+}
 
 .dropdown{
       position: relative;
@@ -65,6 +83,7 @@ li a{
       padding:1rem;
     float: left;
     padding-top:2%;
+    cursor: pointer;
 }
 
 .footer {
