@@ -17,15 +17,15 @@ app.controller('jobOpportunityController', function($scope, $http){
 
         columnDefs: [
             {
-            	name: 'jobid', 
+            	name: 'jobId', 
                 displayName: 'Job ID'
             },
             {
-            	name: 'jobtitle',
+            	name: 'jobTitle',
             	displayName: 'Job Title'
             },
             {
-                name: 'organisation',
+                name: 'jobOrganisation',
                 displayName: 'Organisation'
             },
             {
@@ -37,7 +37,7 @@ app.controller('jobOpportunityController', function($scope, $http){
                 displayName: 'CTC'
              },
 			 {
-                name: 'jobdescribtion',
+                name: 'jobDescription',
                 displayName: 'Job Describtion'
              },
              {
@@ -59,11 +59,11 @@ $scope.getTableHeight=function(){
 };
 
     
-//    $http.get('/json/json.json')
-//    .then(function (response) {
-//    	 $scope.details.data= response.data;
-//
-//    });
+    $http.get('/showJobOpportunity')
+  .then(function (response) {
+    	 $scope.details.data= response.data;
+
+    });
     
     $scope.showInterstForm=function(){
     	 
@@ -76,12 +76,84 @@ $scope.getTableHeight=function(){
     	console.log("WORKING Closing of the form");
     };
    
- $scope.search=function(){
-     if($scope.name=="" && $scope.location==""){
-         $scope.errorMessage="Enter the value to search";
 
- };
-   
- };
+ 
+ 
+ $scope.search= function(){
+	 console.log("validation js working");
+     
+     if($scope.name=="" && $scope.location==""){
+             $scope.errorMessage="Enter the value to search";
+             $http.get('/get')
+         .success(function (response) {
+             $scope.gridOptions.data= response;
+         })
+         .error(function (error) {
+            console.log("Error"+ error);
+         });
+     }
+     
+     else if($scope.location==""){
+             $scope.errorMessage="";
+             var fd = new FormData();
+         fd.append("name", "%"+$scope.name+"%")
+         console.log(fd);
+         var method = "POST";
+         $http.post('/get', fd, {
+         transformRequest: angular.identity,
+         headers: {'Content-Type': undefined}
+        })
+        .then(function(response){
+                console.log(response);
+                $scope.gridOptions.data = response.data;
+        },function errorCallback(response){
+             console.log(JSON.stringify(response.data));
+        });
+     }
+     
+     else if($scope. name==""){
+             $scope.errorMessage="";
+             var fd = new FormData();
+         fd.append("location", "%"+$scope.location+"%")
+         console.log(fd);
+         var method = "POST";
+         $http.post('/get', fd, {
+         transformRequest: angular.identity,
+         headers: {'Content-Type': undefined}
+        })
+        .then(function(response){
+                console.log(response);
+                $scope.gridOptions.data = response.data;
+         },function errorCallback(response){
+             console.log(JSON.stringify(response.data));
+        });
+     }
+     
+     else{
+             $scope.errorMessage="";
+             var fd = new FormData();
+             fd.append("name", "%"+$scope. name+"%")
+         fd.append("location", "%"+$scope.location+"%")
+         console.log(fd);
+         var method = "POST";
+         $http.post('/', fd, {
+         transformRequest: angular.identity,
+         headers: {'Content-Type': undefined}
+        })
+        .then(function(response){
+                console.log(response);
+                $scope.gridOptions.data = response.data;
+        },function errorCallback(response){
+             console.log(JSON.stringify(response.data));
+        });
+     }
+
+     
+     
+     
+     
+}
+
+ 
 });
 	
