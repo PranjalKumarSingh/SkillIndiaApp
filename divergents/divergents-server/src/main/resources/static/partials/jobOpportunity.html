@@ -9,14 +9,21 @@
     <div class="container-fluid">
 
         <div class="row">
-            <form class="form-inline" name="formValidation">
+            <form class="form" >
+            <div class="col-md-4">
+            	<input class="form-control" id="name" type="text" ng-model="name" placeholder="Enter Job Role">
+            </div>
 
-                <input class="form-control" id="name" type="text" ng-model="name" placeholder="Enter Job role">
 
-                <input class="form-control" id="location" type="text" ng-model="location" placeholder="Enter Location">
+  <div class="col-md-3">
+    <input class="form-control" id="location" type="text" ng-model="location" placeholder="Enter Location">
+  </div>
+  <div class="col-md-5">
+    <button type="button" class="btn btn-primary" ng-click="search()">Search</button>
+  </div> 
 
-                <button type="button" class="btn btn-primary" ng-click="search()">Search</button>
-              <!--   <p class="errormessage" ng-bind="errorMessage">{{errorMessage}}</p> -->
+  <p class="errormessage" ng-bind="errorMessage">{{errorMessage}}</p>
+
             </form>
 
         </div>
@@ -24,7 +31,7 @@
         <div class="table">
             <h4> Recent Job Opportunity</h4>
             <div ui-grid="details" ui-if="details.data.length>0" class="grid grid-align " ui-grid-auto-resize ng-style="getTableHeight()"></div>
-           <!--  <div ui-grid="details" class="grid grid-align " ui-grid-auto-resize ></div> -->
+          
         </div>
 
         <!-- Modal -->
@@ -80,7 +87,7 @@
                 <b>Need Help in finding the right career options?</b>
             </div>
             <div class="col-md-2">
-                <a href="" class="btn btn-primary" role="button">Connect with Mentor</a>
+                <a href=""  role="button" class="btn btn-primary">Connect with Mentor</a>
             </div>
         </div>
 
