@@ -1,0 +1,13 @@
+JobRolesDetails:
+ showJobRolesBox: >
+  SELECT jobRoleId, jobRole,sectorSkillCouncil from jobroles where JobRole = :jobRole;
+
+ PopulateJobRoleGrid: >
+  SELECT * FROM jobroles;
+ 
+ showJobRolesLetter: >
+   SELECT jobRoleId, jobRole,sectorSkillCouncil from jobroles where jobRole like ':x%';
+   
+   
+   
+  
