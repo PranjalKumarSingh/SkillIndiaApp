@@ -43,7 +43,7 @@ app.controller('jobOpportunityController', function($scope, $http){
              {
             	name: 'showinterest',
             	displayName: 'Show Interest',
-            	cellTemplate: '<i class="glyphicon glyphicon-thumbs-up" ng-click="grid.appScope.showInterstForm()"></i>'
+            	cellTemplate: '<i class="glyphicon glyphicon-thumbs-up"  ng-click="grid.appScope.showInterstForm()"></i>'
             }
              
         ]
@@ -58,8 +58,8 @@ $scope.getTableHeight=function(){
 	};
 };
 
-    
-    $http.get('/showJobOpportunity')
+   
+   $http.get('/showJobOpportunity')
   .then(function (response) {
     	 $scope.details.data= response.data;
 
@@ -84,7 +84,7 @@ $scope.getTableHeight=function(){
      
      if($scope.name=="" && $scope.location==""){
              $scope.errorMessage="Enter the value to search";
-             $http.get('/get')
+             $http.get('/showJobOpportunity')
          .success(function (response) {
              $scope.gridOptions.data= response;
          })
@@ -111,7 +111,7 @@ $scope.getTableHeight=function(){
         });
      }
      
-     else if($scope. name==""){
+     else if($scope.name==""){
              $scope.errorMessage="";
              var fd = new FormData();
          fd.append("location", "%"+$scope.location+"%")
