@@ -41,21 +41,21 @@
       </div>
 </div>
        
-        
+      
 <div class="training material">
-       <form class="form-horizontal" ng-submit="#" role="form" name="training" novalidate>
-        <div class="form-group" ng-class="{'has-error': training.search.$touched && studentForm.search.$error.required , 'has-success': training.search.$valid }">
-            <label for="search" class="col-sm-3 control-label"></label>
+       <form class="form-horizontal" role="form" name="training" novalidate>
+        <div class="form-group" ng-class="{'has-error': training.search1.$touched && training.search1.$error.required , 'has-success': training.search1.$valid }">
+            <label for="search1" class="col-sm-3 control-label"></label>
             <div class="col-sm-6" id="searchbox">
-                <input type="text"  placeholder="Please enter a job role for search"  name="search" class="form-control" ng-model="searchBox" required />
+                <input type="text"  placeholder="Please enter a job role for search"  name="JobRole" class="form-control" ng-model="JobRole" required />
             </div>
             
-             <div class="col-sm-2">  <input type="submit"  value="search" class="btn btn-primary col-sm-offset-3" /></div>
+             <div class="col-sm-2"> <input type="submit"  ng-click="searchJobRole()" value="search" class="btn btn-primary col-sm-offset-3" /></div>
 
         </div>
         <div class="col-sm-3">
-                <span class="help-block" ng-show="training.search.$touched && training.search.$error.required">
-             <p style="color:red;">Please enter a job role</p></span>
+               <span  style="color:red;" ng-show="training.JobRole.$touched && training.JobRole.$invalid">please enter a job role</span>
+             
         </div>
        
        </form>
