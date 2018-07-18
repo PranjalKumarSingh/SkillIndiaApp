@@ -13,6 +13,9 @@ padding:1rem;
 margin-bottom: 1px;
 
 }
+.navbar-header{
+	display:flex;
+}
 ul.nav.navbar-nav.navbar-right{
 	    font-size: 83%;
 	
