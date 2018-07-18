@@ -55,14 +55,13 @@
 }
 .list-inline{
 	padding-left: 1rem;
-    margin-left: -3rem;
-    margin-top: -1rem;
+    margin-left: -4rem;
+        margin-top: -2rem;
 }
 .list-inline>li {
-   display: inline-block;
-    padding-right: -5pt;
-    padding-right: 6pt;
-    padding-left: 9pt;
+    display: inline-block;
+    padding-right: 0pt;
+    padding-left: 1pt;
     border-right: 1pt solid black;
     webkit-padding-end: 1rem;
 }
