@@ -3,13 +3,11 @@
 </head>
 
 <div ng-controller="industryController">
-	<header>
-<div class="row">
+
+<header>
+
+<div class="row container-fluid">
 <div class="col-md-12" style="padding: 0rem;height: 5rem">
-
-
-
-
 
 <nav class="navbar navbar-default">
 <div class="col-md-2">
@@ -41,77 +39,61 @@
 </div>
 
 <div class="col-md-10">
-
     <!-- Collect the nav links, forms, and other content for toggling -->
-    
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
-    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-      
-        		<li><a style="cursor: pointer; ng-click="x='HOME'">HOME</a></li>
-				<li><a style="cursor: pointer; ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
-				<li><a style="cursor: pointer; ng-click="x='webinar'">WEBINARS</a></li>
-				<li><a style="cursor: pointer; ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
-				<li><a style="cursor: pointer; ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
-				<li><a style="cursor: pointer; ng-click="x='helpline'">HELPLINE</a></li>
-				
+        	<li><a ng-click="x='HOME'">HOME</a></li>
+				<li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
+				<li><a ng-click="x='webinar'">WEBINARS</a></li>
+				<li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
+				<li><a ng-click="x='tendersAndRfps'">TENDERS AND RFP'S</a></li>
+				<li><a ng-click="x='helpline'">HELPLINE</a></li>
         <li class="dropdown">
-        
-         <!-- <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USER TYPE <span class="caret"></span></a> --> 
-          
           <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USER TYPE <span class="caret"></span></a>
-          
           <ul class="dropdown-menu">
-            <li><a  ng-click="students()">STUDENT</a></li>
-	        <li><a ng-click="industry()">INDUSTRY</a></li>
-         </ul>
-         
+            <li><a ng-click="students()">STUDENT</a></li>
+	          				<li><a ng-click="industry()">INDUSTRY</a></li>
+          </ul>
         </li>
-        
       </ul>
-      
       </div>
-      
-    </div>
-      
-    </nav><!-- /.navbar-collapse -->
+      </div>
+  </nav><!-- /.navbar-collapse -->
     </div>
   </div><!-- /.container-fluid -->
  </header>
-            <div class="mainbody">
-            
-            <div ng-switch="" on="x">
+		
+<div class="mainbody">
+		
+	<div ng-switch on="x">
 
-            <div ng-switch-when="HOME">
-            <div ng-include="" src="'partials/quickFacts.html'"></div>
-            </div>
-            
-            <div ng-switch-when="SKILL COMPETITIONS">
-            <div ng-include=""  src="'partials/skillCompetition.html'"></div>
-            </div>
-            
-            <div ng-switch-when="webinar">
-            <div ng-include=""  src="'partials/webinar.html'"></div>
-            </div>
-            
-            <div ng-switch-when="skillGapStudy">
-            <div ng-include=""  src="'partials/skillGapStudy.html'"></div>
-            </div>
-            
-             <!--out of scope so i have given home.html-->
-            
-            <div ng-switch-when="tendersAndRfps">
-            <div ng-include=""  src="'partials/home.html'"></div>
-            </div>
-            
-            <div ng-switch-when="helpline">
-            <div ng-include=""  src="'partials/helpline.html'"></div>
-            </div>
-            
-            <div ng-switch-when="userType">
-            <div ng-include="" src="'partials/userType.html'"></div>
-            </div>
-            
+		<div ng-switch-when="HOME">
+		<div ng-include src="'partials/quickFacts.html'"></div>
+		</div>
+		
+		<div ng-switch-when="SKILL COMPETITIONS">
+		<div ng-include src="'partials/skillCompetition.html'"></div>
+		</div>
+		
+		<div ng-switch-when="webinar">
+		<div ng-include src="'partials/webinar.html'"></div>
+		</div>
+		
+		<div ng-switch-when="skillGapStudy">
+		<div ng-include src="'partials/skillGapStudy.html'"></div>
+		</div>
+		
+		<div ng-switch-when="tendersAndRfps">
+		<div ng-include src="'partials/tenders.html'"></div>
+		</div>
+		
+		<div ng-switch-when="helpline">
+		<div ng-include src="'partials/helpline.html'"></div>
+		</div>
+		
+		
+		
+           
             <div ng-switch-when="Quick Facts">
             <div ng-include="" src="'partials/quickFacts.html'"></div>
             </div>
@@ -120,16 +102,16 @@
             <div ng-include="" src="'partials/ssc.html'"></div>
             </div>
          
-          <!--out of scope so i have given home.html-->
+          <!--out of scope -->
             
             <div ng-switch-when="CSR">
-            <div ng-include="" src="'partials/home.html'"></div>
+            <div ng-include="" src="'partials/csr.html'"></div>
             </div>
             
-          <!--out of scope so i have given home.html-->
+          <!--out of scope -->
             
             <div ng-switch-when="Employee Certification">
-            <div ng-include="" src="'partials/home.html'"></div>
+            <div ng-include="" src="'partials/employee.html'"></div>
             </div>
             
             <div ng-switch-when="Talent Acquisition">
@@ -156,4 +138,4 @@
 			<div style="cursor: pointer; color: white;"ng-click="x='Documents and Policies'" class="img-common image7 col-md-1"><img class="img7" src="images\Relevant Documents.png" type="image/png"/><label><h6>Documents and Policies</h6></label></div>
         </div>
 </div>
-	
+
