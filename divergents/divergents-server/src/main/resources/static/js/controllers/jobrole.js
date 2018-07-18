@@ -73,18 +73,34 @@ app.controller('jobRoleController', function($scope,$http){
     	var rowHeight=30;
     	var headerHeight=30;
     	return{
-    		height: ($scope.details.data.length * rowHeight + headerHeight) + "px"
+     height: ($scope.details.data.length * rowHeight + headerHeight) + "px"
     		
     	};
     };
+    
+    $scope.searchJobRole = function () {
+		 console.log("inside search for job role text box"+$scope.JobRole);
+		 
+		  $http.get('/SearchJobRole?JobRole='+$scope.JobRole)
+	    .then(function (response) {
+	    	 $scope.gridJobRoles.data= response.data;
+	    	console.log("working searchJobRole function");
+	    	});
+	     };
+	     
 	$scope.x="";
-	$scope.search = function(alphabet){
-	console.log("Success and the filter is " + alphabet);
-	$http.get('/getJobRoleForSelectedLetter?letter='+alphabet);
-   };
+	$scope.search = function(x){
+	console.log("Success and the filter is " +x);
+	
+	$http.get('/getJobRoleForSelectedLetter='+$scope.x)
+	.then(function (response) {
+    	 $scope.gridJobRoles.data= response.data;
+
+    });
     
+	};
     
-    $http.get('/')
+    $http.get('/JobRoles')
     .then(function (response) {
     	 $scope.gridJobRoles.data= response.data;
 
