@@ -1,41 +1,31 @@
 body{
-margin:0;
+margin:0rem;
 
 }
 .header{
-	  padding:1%;
+padding:1rem;
       background-color:#fbfbfb;
       height:7rem;
-      font-size: 76%;
+      font-size: 1rem;
 }
 
 .navbar{
 margin-bottom: 1px;
+
 }
-.collapse{
-    font-size: 80%;
+.navbar-header{
+	display:flex;
 }
-.dropdown{
-      position: relative;
-      
+ul.nav.navbar-nav.navbar-right{
+	    font-size: 83%;
+	
 }
-.btn-default {
+.btn1-default {
     color: #333;
     background-color: #fdfdfd;
 }
-.skillindialogo
-{
-	    width: 4rem;
-    margin-left: 6rem;
-    margin-top: 0.7rem;
-}
-.nsdcindia
-{
-	    width: 4rem;
-    margin-left: 5rem;
-    margin-top: 1.5rem;
-}
-.btn{
+
+.btn1{
       display: flex;
     margin-bottom: 0;
     font-size: 6px;
@@ -49,45 +39,29 @@ margin-bottom: 1px;
     border-radius: 0px;
 }
 
+.dropdown{
+      position: relative;
+      
+}
+
+
 .dropdown-menu {
- 
+    position: absolute;
     top: 58%;
     left: 561px;
     z-index: 1000;
 }
 .mainbody{
-
       margin:0%;
-      background-color:#fff;
+     background-color:white;
       height:49rem;
-}
-.navbar-header{
-	display: flex;
-    margin-left: 3rem;
 }
 .imgs{
       height: 6rem;
     padding: 1rem;
 }
 
-.navbar-brand>img{
-	display:inline;
-	width:12%;
-}
 
-.container-fluid{
-	padding-right:0;
-	padding-left:0;
-}
-
-ul
-{
-      
-    margin-left: 15%;
-    overflow: hidden;
-   
-    
-}
 #one{
       
 background-color: #fbfbfb;   
@@ -95,17 +69,36 @@ background-color: #fbfbfb;
 #two{
         background-color: #4589bf;
 }
-
+.navbar-brand>img {
+    display: flex;
+    width: 50%;
+    heigth:2%;
+    
+   
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left:0;
+}
+li a{
+      color:grey;
+      padding:1rem;
+    float: left;
+    padding-top:2%;
+    cursor: pointer;
+}
 
 .footer {
-   
+    
     position: fixed;
     bottom: 0%;
     background-color: #438abb;
     text-align: center;
-  	width:100%;
-  
-    
+    width: 100%;
+   
+}
+.footer .col-md-3{
+	padding-left:0;
 }
 
 
@@ -117,8 +110,8 @@ h6{
 
 .img1{
       height: 11rem;
-    margin-left: -2rem;
-  
+    margin-left: 0rem;
+   /* width: 132rem;*/
 
 }
 .image2{
