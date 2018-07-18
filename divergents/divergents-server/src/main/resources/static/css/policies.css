@@ -56,12 +56,12 @@
 .list-inline{
 	padding-left: 1rem;
     margin-left: -4rem;
-        margin-top: -2rem;
+        margin-top: -1rem;
 }
 .list-inline>li {
     display: inline-block;
-    padding-right: 0pt;
-    padding-left: 1pt;
+   padding-right: 12pt;
+    padding-left: 14pt;
     border-right: 1pt solid black;
     webkit-padding-end: 1rem;
 }
