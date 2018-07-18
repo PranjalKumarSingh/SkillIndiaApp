@@ -10,21 +10,23 @@
 
 }
 
- 
-
-.panel-default{
-
-        padding-bottom: 7rem;
-
-    margin-top: 1rem;
-
-    padding-left: 5rem;
-
-    height: 0rem;
-
-    padding-top: 0rem;
-
+ .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 31%;
+    padding-right: 24%;
+    /* padding-top: 0; */
+    padding-top: 11%;
 }
+.panel-default {
+    padding-bottom: 7rem;
+    margin-top: 1rem;
+    padding-left: 18%;
+    height: 0rem;
+    padding-top: 0rem;
+}
+
+
 .form-horizontal .form-group {
     margin-right: 62px;
     margin-left: -6px;
