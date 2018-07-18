@@ -1,0 +1,3 @@
+jobOpportunityQuery:
+ showJobOpportunity: >
+  select * from job.jobopportunity;
