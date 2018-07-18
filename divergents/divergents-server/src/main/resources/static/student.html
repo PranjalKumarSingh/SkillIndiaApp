@@ -32,10 +32,12 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand">
+      <a href="https://www.nsdcindia.org">
       <div class="col-md-6">
-		<img src="../images/NSDC logo.png" type="image/png" style="width: 4rem;"></div>
+		<img src="images/NSDC logo.png" type="image/png" style="width: 4rem;"></div></a>
+		 <a href="https://www.nsdcindia.org">
 		<div class="col-md-6">
-		<img src="images/Image-of-Skill-India.png" type="image/png" style="width: 3rem;"></div>
+		<img src="images/Image-of-Skill-India.png" type="image/png" style="width: 3rem;"></div></a>
 		</a>
     </div>
 </div>
@@ -45,7 +47,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        	<li><a ng-click="x='HOME'">HOME</a></li>
+        		<li><a ng-click="x='HOME'">HOME</a></li>
 				<li><a ng-click="x='SKILL COMPETITIONS'">SKILL COMPETITIONS</a></li>
 				<li><a ng-click="x='webinar'">WEBINARS</a></li>
 				<li><a ng-click="x='skillGapStudy'">SKILL GAP STUDY</a></li>
@@ -54,8 +56,8 @@
         <li class="dropdown">
           <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USER TYPE <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a ng-click="students()">STUDENT</a></li>
-	          				<li><a ng-click="industry()">INDUSTRY</a></li>
+            <li><a href="http://localhost:8080/#/student">STUDENT</a></li>
+	          				<li><a href="http://localhost:8080/#/industry">INDUSTRY</a></li>
           </ul>
         </li>
       </ul>
@@ -72,6 +74,10 @@
 	<div ng-switch on="x">
 
 		<div ng-switch-when="HOME">
+		<div ng-include src="'partials/home.html'"></div>
+		</div>
+		
+		<div ng-switch-default>
 		<div ng-include src="'partials/home.html'"></div>
 		</div>
 		
