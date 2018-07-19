@@ -15,19 +15,19 @@
 	   <div class="form1 col-md-7">
 	     <form name="myForm" id="s3">
 	     <div class="form-group">
-		<label for="name">Name:</label> 
+		<label for="name" style="margin-left: 0%">Name:</label> 
          <input name="myName" class="form-control" ng-model="user.myName" required placeholder="enter your name" id="name">
          <span ng-show="myForm.myName.$touched && myForm.myName.$invalid" id="a2">The name is required.</span>
 		 </div>
 		 <div class="form-group">
-		    <label for="email">Email:</label>
+		    <label for="email"style="margin-left: 0%">Email:</label>
 			<input name="myEmail" class="form-control" ng-model="myEmail" required placeholder="enter your email"
 			id="email" >
 			<span ng-show="myForm.myEmail.$touched && myForm.myEmail.$invalid" id="a2">The email is required.</span>
 			
 		 </div>
 		 <div class="form-group">
-		    <label for="address">Address:</label>
+		    <label for="address"style="margin-left: 0%">Address:</label>
 			<input name="myAddress" class="form-control" ng-model="myAddress" required id="address" placeholder="enter your address"/>
 			<span ng-show="myForm.myAddress.$touched && myForm.myAddress.$invalid" id="a2">The address is required.</span>
 		 </div>
@@ -35,7 +35,7 @@
 		    
 		
     
-         <label for="age">Age:</label>
+         <label for="age"style="margin-left: 0%">Age:</label>
          <input type="number" class="form-control" ng-model="myAge" required id="age" placeholder="enter your age" name="myNumber" 
          ng-pattern="/^[0]*$/"  ng-model="myNumber"   ng-required="true" number-test="" min="5" 
          max="100" />
