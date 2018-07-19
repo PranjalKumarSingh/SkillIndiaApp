@@ -34,14 +34,14 @@ public class JobRolesService {
 		}
 	}
 		
-public Collection <JobRolesDto> getshowJobRolesLetter(String jobRoles){
+public Collection<JobRolesDto> getshowJobRolesLetter(String Alphabet){
 	
 	LOGGER.error("Request received from JobRoles Controller through letter");
 	LOGGER.error("In JobRoles Service through letter");
 	
 	try {
 		LOGGER.error("In try block to get jobroles details through letter");
-		return jobRolesDao.getshowJobRolesLetter(jobRoles);
+		return jobRolesDao.getshowJobRolesLetter(Alphabet);
 	} catch (Exception e) {
 	
 		LOGGER.error("An error occurred while getting the details through letter"+ e);
