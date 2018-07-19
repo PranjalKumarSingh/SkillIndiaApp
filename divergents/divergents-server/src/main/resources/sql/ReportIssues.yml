@@ -1,0 +1,3 @@
+reportIssuesdata:
+ reportIssuesCredentials: >
+  insert into reportIssues (issueId,candidateName,candidateId,issueWith,issueType,instituteName,instituteId,issueDescription) values ( :issueId, :candidateName, :candidateId, :issueWith, :issueType, :instituteName, :instituteId, :issueDescription);
