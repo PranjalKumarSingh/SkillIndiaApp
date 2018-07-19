@@ -82,7 +82,7 @@ public class JobRolesDao extends AbstractTransactionalDao{
    			LOGGER.error("In try block of JobRoleDao" +Alphabet);
    			Map<String,Object> parameters = new HashMap<>();
    			LOGGER.error("Execute query to get JobRoles details through alphabet");
-   			parameters.put("Alphabet",Alphabet);
+   			parameters.put("letter",Alphabet);
    			return getJdbcTemplate().query(jobRolesConfig.getshowJobRolesLetter(),parameters,JobRoles_RowMapper);
    			
    		} catch (Exception e){
