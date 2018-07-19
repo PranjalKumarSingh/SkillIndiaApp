@@ -5,17 +5,12 @@ package com.sih.msde.divergents.dto;
 
 	public class trainingMaterialDto extends BaseDto {
 		 
-		private String jobRole;
+		
 		private String trainingMaterialId;
 		private String trainingTitle;
 		private String path;
 		
-		public String getjobRole() {
-			return jobRole;
-		}
-		public void setjobRole(String jobRole) {
-			this.jobRole = jobRole;
-		}
+
 		public String gettrainingMaterialId() {
 			return trainingMaterialId;
 		}
@@ -37,10 +32,9 @@ package com.sih.msde.divergents.dto;
 		
 		/*------CONSTRUCTOR-------------*/
 		
-		public trainingMaterialDto(String jobRole, String trainingMaterialId, String trainingTitle, String path)
+		public trainingMaterialDto(String trainingMaterialId, String trainingTitle, String path)
 		{
 			super();
-			this.jobRole = jobRole;
 			this.trainingMaterialId = trainingMaterialId;
 			this.trainingTitle = trainingTitle;
 			this.path = path;
