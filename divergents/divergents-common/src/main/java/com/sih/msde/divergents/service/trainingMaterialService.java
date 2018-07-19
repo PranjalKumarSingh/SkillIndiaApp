@@ -36,7 +36,8 @@ package com.sih.msde.divergents.service;
 					return null;
 				}
 			}
-				public Collection <trainingMaterialDto> getshowTrainingMaterialBox(String jobRole){
+	}
+				/*public Collection <trainingMaterialDto> getshowTrainingMaterialBox(String jobRole){
 					
 					LOGGER.error("Request received from training material Controller through search box");
 					LOGGER.error("In Service through search box");
@@ -51,7 +52,7 @@ package com.sih.msde.divergents.service;
 					}
 				}
 			
-			}
+			}*/
 			
 
 	
