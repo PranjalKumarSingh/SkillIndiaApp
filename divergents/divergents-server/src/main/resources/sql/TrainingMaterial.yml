@@ -1,0 +1,4 @@
+TrainingMaterialQuery:
+ showTrainingMaterialDetails: >
+  select * from trainingmaterial;
+  
