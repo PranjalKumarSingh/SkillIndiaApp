@@ -13,34 +13,36 @@ app.controller('findTCController', function($scope,$http){
 		        useExternalPagination: true,
 
 	        columnDefs: [
-	            {
-	            	name: 'center_name', 
-	                displayName: 'Center Name' 
-	            },
-	            {
-	            	name: 'address',
-	            	displayName: 'Address'
-	            },
-	            {
-	                name: 'contact',
-	                displayName: 'Contact'
-	            },
-	            {
-	            	name: 'show_interest',
-	            	displayName: 'Show Interest'
-	            }]
+
+	   	              { name: 'trainingCenterName', displayName: 'Center Name', cellClass:'',headerCellClass:''},
+	   	              { name: 'address', displayName: 'Address' ,cellClass:'',headerCellClass:'' },
+	   	              { name: 'contactNumber',displayName: 'Contact' , cellClass:'',headerCellClass:''},
+	   	              { name: 'Interest', displayName:'Show Interest' , cellTemplate: '<i class="glyphicon glyphicon-thumbs-up"  ng-click=grid.appScope.showYourInterest()></i>',headerCellClass:'trainingCenters',cellClass:'trainingCenterCellClass'}
+	   	              
+	   	   ]
 	           
 	             
 	  };
 	    
 	    
 	    
-	    
-	    $http.get('/')
+	   
+	    $http.get('/jsonData/findCenter.json')
 	    .then(function (response) {
 	    	 $scope.details.data= response.data;
 
 });
+	    
+	    
+	    $scope.showYourInterest=function(){
+			if($scope.showInterest== false){
+			$scope.showInterest= true;}
+			else{
+				$scope.showInterest= false;
+			}
+			
+			
+		}
 });    
 
     
