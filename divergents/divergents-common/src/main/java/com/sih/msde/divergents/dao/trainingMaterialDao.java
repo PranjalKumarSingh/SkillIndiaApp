@@ -4,8 +4,7 @@ package com.sih.msde.divergents.dao;
 	import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+
 
 	import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,7 +50,7 @@ import com.sih.msde.divergents.dto.trainingMaterialDto;
 				}
 			}
 				
-				public Collection<trainingMaterialDto> getshowTrainingMaterialBox(String jobRole){
+				/*public Collection<trainingMaterialDto> getshowTrainingMaterialBox(String jobRole){
 					
 					LOGGER.error("Request received from Service through search box");
 					LOGGER.error(" To get training material  Detail  through search box");
@@ -74,7 +73,7 @@ import com.sih.msde.divergents.dto.trainingMaterialDto;
 						
 					}
 					
-				}
+				}*/
 				
 			
 			
@@ -84,12 +83,12 @@ import com.sih.msde.divergents.dto.trainingMaterialDto;
 				@Override
 				public trainingMaterialDto mapRow(ResultSet rs, int rowNum) throws SQLException {
 					
-					String jobRole = rs.getString("jobRole");
+					
 					String trainingMaterialId = rs.getString("trainingMaterialId");
 					String trainingTitle = rs.getString("trainingTitle");
 					String path = rs.getString("path");			
 				
-					return new trainingMaterialDto(jobRole,trainingMaterialId,trainingTitle,path);
+					return new trainingMaterialDto(trainingMaterialId,trainingTitle,path);
 					
 				}
 				
