@@ -3,6 +3,8 @@ package com.sih.msde.divergents.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,17 +25,19 @@ public class JobOpportunityDao extends AbstractTransactionalDao{
 	private static final Logger LOGGER= LoggerFactory.getLogger(JobOpportunityDao.class);
 	private static final JobOpportunityRowmapper JobOpportunity_RowMapper = new JobOpportunityRowmapper();
 	
-public Collection<JobOpportunityDto> getJobOpportunity(){
+public Collection<JobOpportunityDto> getJobOpportunity(String location){
 
 	LOGGER.debug("Request received from Service");
 	LOGGER.debug("In JobOpportunityDao, to get job opportunity Detail");
 
 		
 		try {
-			LOGGER.debug("In try block");
+			LOGGER.debug("In try block of DAO : " +location);
+			Map<String,Object> parameters = new HashMap<>();
+			parameters.put("location", location);
 			LOGGER.debug("Execute query to get job opportunity details");
 
-			return getJdbcTemplate().query(jobOpportunityConfig.getShowJobOpportunity(), JobOpportunity_RowMapper);
+			return getJdbcTemplate().query(jobOpportunityConfig.getShowJobOpportunity(),parameters,JobOpportunity_RowMapper);
 			
 		} catch (Exception e) {
 			LOGGER.debug("In catch block");
@@ -43,6 +47,29 @@ public Collection<JobOpportunityDto> getJobOpportunity(){
 		}
 		
 	}
+
+public Collection<JobOpportunityDto> getPopulateDetailsGrid(){
+
+	LOGGER.debug("Request received from Service");
+	LOGGER.debug("In JobOpportunityDao, to get job opportunity Detail");
+
+		
+		try {
+			LOGGER.debug("In try block of DAO : ");
+			
+			LOGGER.debug("Execute query to get job opportunity details");
+
+			return getJdbcTemplate().query(jobOpportunityConfig.getPopulateDetailsGrid(),JobOpportunity_RowMapper);
+			
+		} catch (Exception e) {
+			LOGGER.debug("In catch block");
+			LOGGER.debug("The exception is : " + e);
+			return null;
+			
+		}
+		
+	}
+
 private static class JobOpportunityRowmapper implements RowMapper<JobOpportunityDto>{
 	
 	@Override
