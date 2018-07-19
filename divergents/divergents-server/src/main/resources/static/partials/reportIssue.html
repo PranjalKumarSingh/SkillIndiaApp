@@ -1,78 +1,79 @@
 <head>
-	<link href="css/reportIssue.css" type="text/css" rel="stylesheet">
+   <link href="css/reportIssue.css" type="text/css" rel="stylesheet">
 </head>
-
 <div ng-controller="reportIssueController">
-	
-
-	<div class="container-fluid">
-    <div class="col-sm-12">
-    <h3 id="color"> Report Issues</h3>
-    </div>
-<div class="container">
-    <div class="4fields">
-    <div id="r1" class="col-sm-6">
-	 <form name="myForm">
-        <div class="form-group">
-      <label for="CName">Candidate Name:</label>
-      <input type="text" name="CName" ng-model="CName" required class="form-control" placeholder="Enter Candidate Name">
-     <span  style="color:red;" ng-show="myForm.CName.$touched && myForm.CName.$invalid">The name is required</span>
-    </div>
-      <div class="dropdown1">
-        <label id="issue1" for="Issue with">Issue with</label>
-        <select class="dropdown1" name="">Select
-          <option value="1">Trainer</option>
-          <option value="2">Assessment</option>
-          <option value="3">Training Partner</option>
-          <option value="4">Training center</option>
-          <option value="5">Assessment Body</option>
-          </select>
-            </div>
    
-    <div id="b2" class="form-group">
-    <label for="IName">Institute Name:</label>
-      <input type="text" name="instituteName" ng-model="instituteName" required class="form-control" placeholder="Enter Institute Name">
-       <span  style="color:red;" ng-show="myForm.instituteName.$touched && myForm.instituteName.$invalid">Please fill the field</span>
-    </div>
-  </form>
-    </div>
-        <div  id="r2" class="col-sm-6">
-         <form name="myForm1">
-    <div class="form-group">
-      <label for="CId">Candidate Id:</label>
-      <input type="text" name="CId" ng-model="CId" required class="form-control" placeholder="Enter Candidate ID">
-       <span  style="color:red;" ng-show="myForm1.CId.$touched && myForm1.CId.$invalid">Please fill the field</span>
-    </div>
-      <div class="dropdown1">
-        <label id="issue1" for="Issue type">Issue type</label>
-                    <select class="dropdown1" name="">Select
-          <option value="1">Unsatisfactory Training</option>
-           <option value="2">Unsatisfactory Training</option>
-            <option value="3">Behavioural issues</option>
-             <option value="">course not complete</option>
-          </select>
-            </div>
-    <div id="b2" class="form-group">
-    <label for="IId">Institution Id:</label>
-      <input type="text" name="IId" ng-model="IId" required class="form-control" placeholder="Enter Institution ID">
-       <span style="color: red;" ng-show="myForm1.IId.$touched && myForm1.IId.$invalid">Please fill the field</span>
-						</div>  
-             
-        </form>
-        </div>
-        
+      <div class="row">
+         <div class="col-md-12">
+            <h3 id="color"> Report Issues</h3>
+         </div>
       </div>
+      <div class="container">
+         <div class="4fields">
+            <div id="r1" class="col-md-6">
+               <form name="myForm">
+                  
+                     <label for="CName">Candidate Name:</label>
+                     <input type="text" name="CName" ng-model="CName" required class="form-control" placeholder="Enter Candidate Name">
+                     <span  style="color:red;" ng-show="myForm.CName.$touched && myForm.CName.$invalid">The name is required</span>
+                  
+                  <div class="dropdown1">
+                     <label id="issue1" for="Issue with">Issue with</label>
+                     <select class="dropdown1" name="">
+                        Select
+                        <option value="1">Trainer</option>
+                        <option value="2">Assessment</option>
+                        <option value="3">Training Partner</option>
+                        <option value="4">Training center</option>
+                        <option value="5">Assessment Body</option>
+                     </select>
+                  </div>
+                  <div id="b2" class="form-group">
+                     <label for="IName">Institute Name:</label>
+                     <input type="text" name="instituteName" ng-model="instituteName" required class="form-control" placeholder="Enter Institute Name">
+                     <span  style="color:red;" ng-show="myForm.instituteName.$touched && myForm.instituteName.$invalid">Please fill the field</span>
+                  </div>
+                 
+               </form>
+            </div>
+            <div  id="r2" class="col-md-6">
+               <form name="myForm1">
+                  <div class="form-group">
+                     <label for="CId">Candidate Id:</label>
+                     <input type="text" name="CId" ng-model="CId" required class="form-control" placeholder="Enter Candidate ID">
+                     <span  style="color:red;" ng-show="myForm1.CId.$touched && myForm1.CId.$invalid">Please fill the field</span>
+                  
+                  <div class="dropdown1">
+                     <label id="issue1" for="Issue type">Issue type</label>
+                     <select class="dropdown1" name="">
+                        Select
+                        <option value="1">Unsatisfactory Training</option>
+                        <option value="2">Unsatisfactory Training</option>
+                        <option value="3">Behavioural issues</option>
+                        <option value="">course not complete</option>
+                     </select>
+                  </div>
+                  <div id="b2" class="form-group">
+                     <label for="IId">Institution Id:</label>
+                     <input type="text" name="IId" ng-model="IId" required class="form-control" placeholder="Enter Institution ID">
+                     <span style="color: red;" ng-show="myForm1.IId.$touched && myForm1.IId.$invalid">Please fill the field</span>
+                  </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+     
+
+     
+<div class="col-md-12">
+ <form>
+          <label id="Id1" for="Idesp">Issue Description</label><br>
+         <textarea id="text1" input="message"  rows="4" cols="155" placeholder="Enter the Issue Description" ></textarea>
+
+         <button type="submit" class="btn btn-primary" ng-click="validate()">Submit</button>
+      </form>
+      </div>
+   
+   </div>
+   
 </div>
-    
-    <div class="col-sm-12">
-    <label id="Id1" for="Idesp">Issue Description</label><br>
-    <textarea id="text1" input="message" rows="3" cols="132" placeholder="Enter the Issue Description" ></textarea>
-    </div>
-    <div id="b1" class="col-sm-12">
-    <button type="submit" class="btn btn-primary" ng-click="validate()">Submit</button>
-    </div>
-    
-    </div>
-    </div>
-    
-	
