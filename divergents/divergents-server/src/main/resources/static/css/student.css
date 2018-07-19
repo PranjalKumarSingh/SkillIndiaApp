@@ -3,21 +3,23 @@ margin:0rem;
 
 }
 .header{
-padding:1rem;
-      background-color:#fbfbfb;
+      padding:1rem;
+      background-color:#ffffff;
       height:7rem;
       font-size: 1rem;
 }
-
 .navbar{
-margin-bottom: 1px;
-
+    margin-bottom: 1px;
+    background-color: #ffffff;
+    border-bottom-color: grey;
 }
+
+
 .navbar-header{
 	display:flex;
 }
 ul.nav.navbar-nav.navbar-right{
-	    font-size: 83%;
+	    font-size: 81%;
 	
 }
 .btn1-default {
@@ -89,7 +91,7 @@ li a{
 }
 
 .footer {
-    
+    margin-left:1%;
     position: fixed;
     bottom: 0%;
     background-color: #438abb;
@@ -182,3 +184,4 @@ h6{
     padding: 1rem;
       margin-left:0rem;
 }
+

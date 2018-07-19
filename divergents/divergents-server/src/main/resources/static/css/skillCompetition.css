@@ -18,12 +18,12 @@
 #a1
 {
 	color: #A07266;
-	margin-left: 2rem;
+	margin-left: 8rem;
 }
 #t4
 {
 	display: flex;
-	
+	margin-top: 8%;
 }
 #t6
 {
@@ -50,19 +50,20 @@ margin-left: 3rem;
 #s3
 {
 	margin-left: 8rem;
-	
+	margin-top:-4%;
 }
-#s4
-{
-		margin-left: 10rem;
-	
+#s4 {
+    margin-left: 8rem;
+    margin-top: 4%;
 }
-#s6
-{
-	color: #7BA9DC;
+#s6 {
+    color: #7BA9DC;
+    margin-left: 36%;
 }
 
 
-
+.form-group {
+    margin-bottom: -8px;
+}
 
 	
