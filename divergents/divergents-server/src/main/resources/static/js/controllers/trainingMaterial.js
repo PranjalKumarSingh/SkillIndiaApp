@@ -30,6 +30,16 @@ app.controller('trainingMaterialController', function($scope,$http){
              }
         ]
     };
+       
+       $scope.searchTrainingMaterial=function(){
+    	   console.log("inside search for training material text box"+$scope.trainingmaterial);
+    	   
+    	   $http.get('/searchTrainingMaterial?trainingmaterial='+$scope.trainingmaterial)
+    	    .then(function (response) {
+    	    	 $scope.gridTraining.data= response.data;
+
+    	    });
+       };
     
     $scope.getTableHeight=function(){
     	var rowHeight=30;
@@ -40,7 +50,7 @@ app.controller('trainingMaterialController', function($scope,$http){
     };
     
 	    
-    $http.get('/')
+    $http.get('/getTrainingMaterialDetails')
     .then(function (response) {
     	console.log("Working ui grid");
     	 $scope.gridTraining.data= response.data;
