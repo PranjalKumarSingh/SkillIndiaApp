@@ -6,7 +6,7 @@
 	
 <div class="col-md-8 connectwithSSC">
 <div class="input-group col-md-8" style=" margin-bottom: 8pt;">
-			<input type= "text" class="form-control col-md-12" ng-model="jobrolename" placeholder="Please enter a Job Role to search Candidates"/>
+			<input type= "text" class="form-control col-md-12" ng-model="jobRole" placeholder="Please enter a Job Role to search Candidates"/>
 			<div class="input-group-btn">
 			<button class="btn btn-primary" ng-click="search(jobrolename)">Search</button>
 			</div>
@@ -16,22 +16,22 @@
 <div ng-switch on="openBlock" style="margin-top:4%">
 <div ng-switch-when="block1">
 <div class="row">
-                    <p style="font-family: Open Sans; font-size:1.5em; color: blue; ">We are having 27,221 candidates trained</p>
+                    <p style="font-family: Open Sans; font-size:1.5em; color: blue; margin-left: 2rem;">We are having 27,221 candidates trained</p>
                 </div></div>
-                <div ng-switch-when="block2">
+                <div class="table">
 
-                   <div ui-grid="gridOptionsTalent" ui-grid-edit ui-grid-cellNav ui-grid-auto-resize class="grid grid-align"></div>  
-                    
-                </div>
-
+                <div ui-grid="gridOptionsTalent" class="grid grid-align" ui-grid-auto-resize></div>  
+               </div>  
+             </div>
+                
 
 
 
 </div>
-</div>
 
 
-<div class="col-md-4 connectwithSSC" style="border-left: 1px solid;">
+
+<div class="col-md-4 connectwithSSC" style="border-left: 1px solid; margin-top: 11rem;">
 <p>Need help in finding the right candidate?</p>
 <br>
 <br>
