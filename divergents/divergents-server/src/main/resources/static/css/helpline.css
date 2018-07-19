@@ -1,11 +1,7 @@
-.row1
+
+.helpline
 {
-    margin-bottom: 4rem;
-	color: #7BA9DC;
-}
-.row2
-{
-	margin-top: 2rem;
+	margin-top: -5rem;
 }
 #t1
 {
@@ -16,4 +12,85 @@
 #t2
 {
 	    font-size: 72%;
+}
+
+.bb2 {
+   
+    float: center;
+    margin:0%;
+}
+
+.bb1 {
+	margin-top: -18%;
+	margin-left: 40%;
+    padding-top: 0%;
+	display:block;
+    width:25rem;
+    float: right;
+    text-decoration: none;
+   
+}
+
+.bb1 a:visited {
+    color: #333;
+    text-decoration: none;
+}
+.bb1 a:link {
+       color: #22a0c5;
+    text-decoration: none;
+}
+
+#text-2 {
+    margin-left: -40%;
+}
+a.sc2 {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: url(../images/linkedinLogo.png);
+
+}
+
+a.sc3 {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: url(../images/twitterLogo.jpg);
+
+}
+a.sc4 {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: url(../images/fbLogo.png);
+
+}
+.fbar li {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding-right: 4px;
+}
+div, ul, li, ol {
+    margin: 0px;
+    padding: 0px;
+}
+.widget widget_text{
+    margin-left: -39%;
+    padding-bottom: 2%;
+}
+.fbar {
+    margin-left: -40%;
+    padding-top: 4%;
+}
+. locate{
+	padding-bottom: 3%;
+}
+.row1{
+	height:35rem;
+	display:flex;
+}
+.row2 {
+    margin-top: -5rem;
+    margin-left: 19%;
 }
