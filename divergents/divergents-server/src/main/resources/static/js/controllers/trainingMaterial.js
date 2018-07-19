@@ -19,10 +19,6 @@ app.controller('trainingMaterialController', function($scope,$http){
                 displayName: 'Training Material Id'
             },
             {
-            	name:'jobRole',
-            	displayName: 'jobRole'
-            },
-            {
             	name: 'trainingTitle',
             	displayName: 'Training Title'
             },
@@ -35,7 +31,7 @@ app.controller('trainingMaterialController', function($scope,$http){
         ]
     };
        
-       $scope.searchTrainingMaterial=function(){
+       /*$scope.searchTrainingMaterial=function(){
     	   console.log("inside search for training material text box"+$scope.trainingmaterial);
     	   
     	   $http.get('/searchTrainingMaterial?trainingmaterial='+$scope.trainingmaterial)
@@ -44,7 +40,7 @@ app.controller('trainingMaterialController', function($scope,$http){
     	    	 console.log("working searchtrainingMaterial function");
 
     	    });
-       };
+       };*/
     
     $scope.getTableHeight=function(){
     	var rowHeight=30;
