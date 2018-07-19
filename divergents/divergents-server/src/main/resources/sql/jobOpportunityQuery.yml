@@ -1,3 +1,6 @@
 jobOpportunityQuery:
  showJobOpportunity: >
+  select * from job.jobopportunity where location = :location;
+  
+ populateDetailsGrid: >
   select * from job.jobopportunity;
