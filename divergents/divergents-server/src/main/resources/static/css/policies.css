@@ -15,12 +15,9 @@
 .btn-primary{
 	margin-left: 375pt;
     font-size: 12pt;
-    margin-top: -25pt;
+    margin-top: -42pt;
     border-radius: 3pt;
 }
-
-
-
 .form-control{
         width: 50rem;
 }
@@ -35,7 +32,6 @@
     height: 154pt;
 
 }
-
 .ui-grid-header-cell{
   text-align: center;
   background-color: #0375b4;
@@ -60,8 +56,8 @@
 }
 .list-inline>li {
     display: inline-block;
-   padding-right: 12pt;
-    padding-left: 14pt;
+   padding-right: 7pt;
+    padding-left: 4pt;
     border-right: 1pt solid black;
     webkit-padding-end: 1rem;
 }
