@@ -9,7 +9,7 @@
         </div>
         
         <div class="text2">
-             <h5> NSDC and various sector skill councils publish relevant training material which can be used for preparation before assessments.</h5>
+             <h5> Skill Councils for Green Jobs publish relevant training material which can be used for preparation before assessments.</h5>
         </div>
         <br>
         <div class="training material">
@@ -17,10 +17,10 @@
           <div class="form-group" ng-class="{'has-error': training.search.$touched && studentForm.search.$error.required , 'has-success': studentForm.search.$valid }">
             <label for="search" class="col-sm-3 control-label"></label>
             <div class="col-sm-4" id="searchbox">
-                <input type="text"  placeholder="Please enter a job role for search"  name="search" class="form-control" ng-model="search" required />
+                <input type="text"  placeholder="Please enter a job role for search"  name="search" class="form-control" ng-model="trainingmaterial" required />
             </div>
             
-             <div class="col-sm-2">  <input type="submit"  value="search" class="btn btn-primary col-sm-offset-3" /></div>
+             <div class="col-sm-2">  <input type="submit"  ng-click="searchTrainingMaterial()"   value="search" class="btn btn-primary col-sm-offset-3" /></div>
 
         </div>
               <div class="col-sm-3">
