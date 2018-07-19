@@ -3,15 +3,16 @@ margin:0rem;
 
 }
 .header{
-padding:1rem;
-      background-color:#fbfbfb;
+      padding:1rem;
+      background-color:#ffffff;
       height:7rem;
       font-size: 1rem;
 }
 
 .navbar{
 margin-bottom: 1px;
-
+border-bottom-color: grey;
+background-color: #ffffff;
 }
 .navbar-header{
 	display:flex;
@@ -181,4 +182,8 @@ h6{
       height: 4rem;
     padding: 1rem;
       margin-left:0rem;
+}
+.qf{
+	    margin-top: 4%;
+    margin-left: 125%;
 }
