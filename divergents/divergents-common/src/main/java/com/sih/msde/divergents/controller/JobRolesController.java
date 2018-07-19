@@ -20,7 +20,7 @@ public class JobRolesController {
 	private JobRolesService jobRolesservice;
 
 	String jobRole = "";
-	String x= "";
+	String x= ""; 
 	
      @RequestMapping("/JobRoles")
 	public Collection<JobRolesDto> getPopulateJobRoleGrid(){
@@ -40,15 +40,15 @@ public class JobRolesController {
 			
 		}
 	}
+     
 	@RequestMapping("/SearchJobRole")
-	
 	public Collection<JobRolesDto> SearchRoleInSearchBox(@RequestParam("JobRole") String jobRole){
 		
 		try {
 			
 			LOGGER.error("In try block ");
 			LOGGER.error("Sending request to service to get JobRole by searchbox :" +jobRole);
-	
+		  //  String job = jobRole+"%";
 			Collection<JobRolesDto> oldCollection = jobRolesservice.getshowJobRolesBox(jobRole);
 			return oldCollection;
 			
@@ -59,16 +59,17 @@ public class JobRolesController {
 			
 		}
 	}
-@RequestMapping("/getJobRoleForSelectedLetter")
 	
+    @RequestMapping("/getJobRoleForSelectedLetter")
 	public Collection<JobRolesDto> SearchJobByLetter(@RequestParam("x") String Alphabet){
 		
 		try {
 			
 			LOGGER.error("In try block ");
 			LOGGER.error("Sending request to service to get JobRole through clicked letter  :" +Alphabet);
-	
-			Collection<JobRolesDto> oldCollection = jobRolesservice.getshowJobRolesLetter(Alphabet);
+			
+			String letter = Alphabet+"%";
+			Collection<JobRolesDto> oldCollection = jobRolesservice.getshowJobRolesLetter(letter);
 			return oldCollection;
 			
 			}catch(Exception e) {
