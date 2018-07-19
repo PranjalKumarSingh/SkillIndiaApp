@@ -16,8 +16,8 @@ app.controller('policiesController', function($scope,$http){
 
 	        columnDefs: [
 	            {
-	            	name: 'policies reports', 
-	                displayName: 'Policies|Reports'
+	            	name: 'policyId', 
+	                displayName: 'Policy Id'
 	            },
 	            {
 	            	name: 'title',
@@ -25,15 +25,15 @@ app.controller('policiesController', function($scope,$http){
 	            },
 	            
 				 {
-	                name: 'description',
+	                name: 'path',
 	                displayName: 'Description',
-	               cellTemplate: '<a ng-href="{{row.entity.description}}" target="_blank" download><img src="images/pdf.png" class="pointer"></a>'
+	               cellTemplate: '<a ng-href="{{row.entity.path}}" target="_blank" download><img src="images/pdf.png" class="pointer"></a>'
 	               }
 	             
 	        ]
 	    };
 	   
-	    $http.get('/json/policies.json')
+	    $http.get('/getPoliciesDetails')
 	    .then(function (response) {
 	    	 $scope.details.data= response.data;
 	    
