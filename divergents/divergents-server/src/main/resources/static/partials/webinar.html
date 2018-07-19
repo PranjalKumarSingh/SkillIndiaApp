@@ -1,42 +1,41 @@
 <head>
 	<link href="css/webinar.css" type="text/css" rel="stylesheet">
 </head>
+           <div ng-controller="webinar">
+<div >
+  <div class="main1">
+  <h2 >Webinars</h2>
+  <div class="upcomingevent"><div class="upcoming"><h4 >Upcoming<h4></div>
+  <div ui-grid="gridOptionwebinar" ui-if="gridOptionwebinar.data.length>0"  class="grid grid-align " ui-grid-auto-resize ng-style="getTableHeight()"></div>
+  
 
+<div class="search-box">
+<div class="form-group row">
+<div class="col-xs-2">
+<h4 class="findwebinar"> Missed a Webinar?</h4>
 
+</div >
+  <div class="col-md-4">
+    <input class="form-control" id="title" type="text" ng-model="searchtitle" placeholder="Enter Title to search">
+  </div>
+  <div class="col-md-3">
+    <button type="button" class="btn btn-primary"ng-click="showWebinarFunc()">Search</button>
+  </div>
+  <p>{{errorMessage}}</p> 
+  </div>
 
-        <div class="container-fluid">
+       <div ng-show="showWebinar">         
+      <div ui-grid="gridOptionwebinar2" ui-if="gridOptionwebinar.data.length>0"  class="grid grid-align " ui-grid-auto-resize ng-style="getTableHeight()"></div> 
+                
+                
+           		 </div>
+           		 </div>
             
-            <br>
-          <h3>webinars</h3>
-			<br>
-			
-			<div ng-controller="webinarController" class="uigrid" >
-				<h4 id="text">upcomings</h4>
-				<br>
-				
-				<div ui-grid="details" class="grid grid-align"  >
-					
-		
-				
-			  
-     <div class="row search">
-           		 <div class="col-md-3" id="search1">
-          		  <h4>Missed a webinars ?</h4>
-           			</div>
-                <div class="col-md-4">
-                    <input type="text" class="formstyle form-control" placeholder="Enter title to search">
-                </div>
-                <div class="col-md-2">
-                    <button type="button" class="formstyle btn btn-primary">Search</button> 
-                </div>
-            </div>
-            	
+        	
+
+
+</div>
+</div>
 </div>
 
-		
-					</div>
-					</div>
-        
-        
-        
         </div>
