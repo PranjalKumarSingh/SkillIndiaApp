@@ -1,0 +1,3 @@
+talentAquisition:
+ showCandidateDetails: >
+  select candidateId, candidateName,age,location,email from jobroles INNER JOIN candidate ON jobroles.jobRoleId = candidate.jobRoleID WHERE jobroles.jobRole= :jobRole;
