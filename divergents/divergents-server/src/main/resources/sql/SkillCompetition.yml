@@ -1,0 +1,3 @@
+skillCompetitiondata:
+ skillCompetitionCredentials: >
+  insert into skillcompetition (id,participantName,participantEmail,participantAddress,participantAge,skillSector,skillSectorCategory) values ( :id, :participantName, :participantEmail, :participantAddress, :participantAge, :skillSector, :skillSectorCategory);
