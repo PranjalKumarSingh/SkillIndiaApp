@@ -24,12 +24,12 @@ app.controller('jobRoleController', function($scope,$http){
             },
             {
             	name: 'sectorSkillCouncil', 
-                displayName: 'Sector Skill Council'
+                displayName: 'Description'
             },
             {
             	 name: 'Trainingcenter', 
-            	 displayName: 'Source(Online|Material)', 
-            	 cellTemplate: '<a ng-href="{{row.entity.Trainingcenter}}"><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loginModal" ng-click="grid.appScope.getTrainingDetails()">Check Training Material</button></a>'
+            	 displayName: 'Training Center|State',
+            	 cellTemplate: '<a ng-href="{{row.entity.Trainingcenter}}"><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loginModal" ng-click="grid.appScope.getTrainingDetails()">Check Training Center</button></a>'
              }
         ]
     }
@@ -63,19 +63,10 @@ app.controller('jobRoleController', function($scope,$http){
     	
     	console.log("button is working");
     	$http.get('')
-        .then(function (response) {
+        .then(function(response) {
         	 $scope.gridTrainingCenterDetails.data= response.data;
 
         });
-    };
-    
-    $scope.getTableHeight=function(){
-    	var rowHeight=30;
-    	var headerHeight=30;
-    	return{
-     height: ($scope.details.data.length * rowHeight + headerHeight) + "px"
-    		
-    	};
     };
     
     $scope.searchJobRole = function () {
@@ -87,25 +78,22 @@ app.controller('jobRoleController', function($scope,$http){
 	    	console.log("working searchJobRole function");
 	    	});
 	     };
-	     
-	$scope.x="";
-	$scope.search = function(x){
-	console.log("Success and the filter is " +x);
-	
-	$http.get('/getJobRoleForSelectedLetter='+$scope.x)
-	.then(function (response) {
-    	 $scope.gridJobRoles.data= response.data;
-
-    });
-    
-	};
-    
-    $http.get('/JobRoles')
+      $http.get('/JobRoles')
     .then(function (response) {
     	 $scope.gridJobRoles.data= response.data;
 
     });
-    
+          
+		     
+    $scope.search= function(letter){
+    	console.log("Searching letter");
+    	$http.get('getJobRoleForSelectedLetter?x='+letter)
+    	//$http.get('getJobRoleForSelectedLetter?x=S')
+    	.then(function(response){
+    		console.log(" working job role letter");
+    		console.log(response.data);
+    		$scope.gridJobRoles.data= response.data;
+    	});
+    };
     });
-
 
