@@ -1,90 +1,105 @@
-.submitButton{
-	background-color: black;
-	color: white;
+.row {
+    margin:0px;
+}
+.switchButton ul{
+	font-size:14pt;
+}
+.report ul{
+	font-size:10pt;
+    list-style-type: none;
+}
+.statewise{
+	padding:2%;
+}
+.report{
+	padding:5%;
+}
+.grid{
+	margin-top:5%;
+}
+.pointer{
+  cursor: pointer;
+}
+.ui-grid-header-cell{
+  text-align: center;
+  background-color: #0375b4;
+  color:#ffffff;
+}
+.ui-grid-row:nth-child(odd) .ui-grid-cell {
+  background-color: #ffffff;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color: #ffffff;
+}
+.ui-grid-cell{
+  text-align: center;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #d4d4d4;;
+}
+.submitIdea{
+	font-size:26pt;
+	font-weight:bold;
+	color:	#800000;
+}
+.idea{
+	padding:12%;
+}
+.submit{
+	color:#ffffff;
+	background-color:#000000;
+}
+.submitidea{
+	margin-left:24%;
+}
+.nav-justified>li {
+    float: none;
+    background-color: #eee;
+}
+.pdffile{
+	padding:3%;
+}
+.pdffile .title{
+	font-size:20pt;
+}
+.skillgap{
+	padding:1%;
 }
 
-#statewiseSkillGap{
-	height:100%;
-	background-color:blue;
-}
-#industrywiseSkillGap{
-	height:100%;
-	background-color:red;
-}
-
-.active-button{
-	background-color: blue;
-}
-button, select {
-    text-transform: none;
-    width: 33%;
-    margin-left: 6%;
-}
-.h1,.h2, .h3, {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 10%;
-}
-#change
-{
-     color: brown;
- margin-right:10%;
- text-align:right ;
- margin-top:30%;
- font-size:150%;
- 
-}
-#btnchange
-{
-	text-align:center right;
-	background-color:#EEEEEE;
-	width:13%;
-	padding-right:0%;
-	margin-left:0%
-	margin-right: 18%;
-}
-.btn-primary
- {
-     background-color: lightgray;
-border:inherit;
- color: #2971b1;
-    font-size: 100%
-}
-
-
-/*button, select {
-    text-transform: none;
-    width: 33%;
-    margin-left: 6%;
-    margin-right: 18%;
-}*/
-.submitButton{
-   background: black;
-    color: white;
-    font-size: 100%
-  
+.skillGapSearch{
+	margin-top: 13pt;
+    margin-left: 5pt;
     }
-  
-  .statewiseBtn{
-  background-color:gray;
-  border:inherit;
- 
-  }
-  
-   .industryBtn{
-    background-color:gray;
-  border:inherit;
-  color:blue;
+    
+.skillGapSearchButton{
+	background-color: #ffce0a;
+	border-color: #ffce0a;
+	color: #000000;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active {
+    color: #fff;
+    background-color: #337ab7;
+}
+.card {
+ background-size: 100% 100%;
+  display:inline-block;
+  float:left;
+  width: 17%;
+  height:30%;
+  margin:1%;
+  padding-top:5%;
+  text-align:center;
+  font-size: 1em;
+  border: 1px solid lightgray;
+  color:#fff60c;
+  font-weight: bold;
+  font-family:'Open sans';
+  cursor:pointer;
+}
 
-   }
-   .analysisBtn{
-    background-color:gray;
-  border:inherit;
-  color:blue;
-  
-  
-   }
-   .heading{
-   }
-   
-   
+.card:hover {
+  background-size: 100% 100%;
+  color:#0c79ff;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+}
