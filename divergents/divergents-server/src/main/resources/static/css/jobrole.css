@@ -1,11 +1,7 @@
 .container-fluid{
-
-       padding-left: 5rem;
-
+    padding-left: 5rem;
     padding-right: 2rem;
-
     padding-top: 1rem;
-
     margin-left: -4rem;
 
 }
@@ -78,16 +74,17 @@ h4{
 }
 .list-inline {
     padding-left: 3rem;
-    margin-left: -3rem;
+    margin-left: -24rem;
     margin-top: -1rem;
 }
 
 .list-inline>li {
     display: inline-block;
-    padding-right: 6pt;
-    padding-left: 1pt;
+    padding-right: 10pt;
+    padding-left: 8pt;
     border-right: 1pt solid black;
     webkit-padding-end: 1rem;
+    
 }
 
  
