@@ -18,14 +18,30 @@ public class JobOpportunityService {
 private JobOpportunityDao jobOpportunityDao;
 
 private static final Logger LOGGER= LoggerFactory.getLogger(JobOpportunityService.class);
-public Collection<JobOpportunityDto> getJobOpportunity(){
+public Collection<JobOpportunityDto> getJobOpportunity(String location){
 	
 	LOGGER.debug("Request received from Controller");
 	LOGGER.debug("In Job opportunity Service, to get Job opportunity details");
 	
 	try {
 		LOGGER.debug("In try block to get Job opportunity details");
-		return jobOpportunityDao.getJobOpportunity();
+		return jobOpportunityDao.getJobOpportunity(location);
+	}
+	catch (Exception e) {
+	
+		LOGGER.debug("An error occurred while getting the details of job opportunity : " + e);
+		return null;
+	}
+}
+
+public Collection<JobOpportunityDto> getPopulateDetailsGrid(){
+	
+	LOGGER.debug("Request received from Controller");
+	LOGGER.debug("In Job opportunity Service, to get Job opportunity details");
+	
+	try {
+		LOGGER.debug("In try block to get Job opportunity details");
+		return jobOpportunityDao.getPopulateDetailsGrid();
 	}
 	catch (Exception e) {
 	
