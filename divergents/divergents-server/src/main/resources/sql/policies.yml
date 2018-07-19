@@ -1,0 +1,3 @@
+pocQuery:
+ showPoliciesDetails: >
+  select * from documentsandpolicies;
