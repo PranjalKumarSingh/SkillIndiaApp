@@ -8,6 +8,14 @@ import org.springframework.stereotype.Component;
 
 public class JobOpportunityConfig {
 private String  showJobOpportunity;
+private String populateDetailsGrid;
+public String getPopulateDetailsGrid() {
+	return populateDetailsGrid;
+}
+
+public void setPopulateDetailsGrid(String populateDetailsGrid) {
+	this.populateDetailsGrid = populateDetailsGrid;
+}
 
 public String getShowJobOpportunity() {
 	return showJobOpportunity;
