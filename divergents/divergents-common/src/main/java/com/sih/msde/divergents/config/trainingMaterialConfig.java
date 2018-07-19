@@ -9,16 +9,17 @@ package com.sih.msde.divergents.config;
 	
 	public class trainingMaterialConfig {
 
-		    private String showTrainingMaterialBox;
-			private String showTrainingMaterialDetails;
-			
-			public String getShowTrainingMaterialBox() {
+		    /*private String showTrainingMaterialBox;*/
+			/*public String getShowTrainingMaterialBox() {
 				return showTrainingMaterialBox;
 			}
 			public void setShowTrainingMaterialBox(String showTrainingMaterialBox) {
 				this.showTrainingMaterialBox = showTrainingMaterialBox;
-			}
-			public String getShowTrainingMaterialDetails() {
+			}*/
+		
+		private String showTrainingMaterialDetails;
+			
+		public String getShowTrainingMaterialDetails() {
 				return showTrainingMaterialDetails;
 			}
 			public void setShowTrainingMaterialDetails(String showTrainingMaterialDetails) {
