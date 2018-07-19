@@ -19,14 +19,18 @@ app.controller('trainingMaterialController', function($scope,$http){
                 displayName: 'Training Material Id'
             },
             {
+            	name:'jobRole',
+            	displayName: 'jobRole'
+            },
+            {
             	name: 'trainingTitle',
             	displayName: 'Training Title'
             },
             
             {
-            	 name: 'sources', 
-            	 displayName: 'Source(Online|Material)', 
-            	 cellTemplate: '<a ng-href="{{row.entity.sources}}" target="_blank" download><img src="images/pdf.png" class="pointer"></a>'
+            	 name: 'path', 
+            	 displayName: 'Path', 
+            	 cellTemplate: '<a ng-href="{{row.entity.path}}" target="_blank" download><img src="images/pdf.png" class="pointer"></a>'
              }
         ]
     };
@@ -37,6 +41,7 @@ app.controller('trainingMaterialController', function($scope,$http){
     	   $http.get('/searchTrainingMaterial?trainingmaterial='+$scope.trainingmaterial)
     	    .then(function (response) {
     	    	 $scope.gridTraining.data= response.data;
+    	    	 console.log("working searchtrainingMaterial function");
 
     	    });
        };
