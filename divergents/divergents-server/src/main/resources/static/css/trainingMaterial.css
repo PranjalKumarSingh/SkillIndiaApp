@@ -4,7 +4,7 @@
 }
 .col-sm-2 {
     width: 1.666667%;
-    margin-left: -3rem;
+    margin-left:-8rem;
 }
 .col-sm-3 {
     width: 20%;
@@ -29,16 +29,16 @@ input[type=submit] {
     padding-bottom: 7rem;
 }
 
-h4 {
+h4{
     padding: -1rem;
     color: #d2691e;
     margin: 1rem;
 }
-h5 {
+h5{
     font-size: 14px;
     margin: 1rem;
 }
-.table {
+.table{
     background-color: #f0f8ff;
     color: #000000;
     padding: 2%;
@@ -62,27 +62,22 @@ h5 {
   border-bottom: 1px solid;
   border-color: #d4d4d4;
 }
-.list-inline {
+.list-inline{
        padding-left: 1rem;
     margin-left: 12rem;
     margin-top: -1rem;
     height: 38px;
 }
 
-.list-inline>li {
+.list-inline>li{
     display: inline-block;
     padding-right: 12pt;
     padding-left: 0pt;
     border-left: 1px solid black;
     width: 3%;
 }
-li a {
-    color: grey;
-    padding: 0rem;
-    float: left;
-    padding-top: 2%;
-}
-.form-control {
+
+.form-control{
     display: block;
     width: 268pt;
     height: 32px;
@@ -94,4 +89,4 @@ li a {
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
-    
+}
