@@ -1,9 +1,8 @@
-
 #color{
     text-align: left;
     color:dodgerblue;
    padding-left: 9rem;
-    margin-left: -9rem;
+    margin-left: -1rem;
 }
 
 .4fields{
@@ -12,42 +11,44 @@
 }
 
 .btn-primary{
-	    font-size: 8pt;
+    font-size: 8pt;
     border-radius: 3pt;
-    margin-left: 51rem
+    margin-left: 41rem
 }
 .dropdown1{
     width:50%;
-	    border-radius: 2rem;
-	    margin-left: 0rem;
-    margin-bottom: -1rem;
+     border-radius: 2rem;
+      margin-left: 0rem;
+     margin-bottom: -1rem;
 }
 
 .form-control{
-        width: 35rem;
-            margin-left: -6rem;
+        width: 41rem;
+        margin-left: -6rem;
 }
 
 #b2{
-	margin-top:1rem;
+    margin-top:1rem;
 }
+
 #r1{
-	       margin-left: -3rem;
-	        padding-left: 3rem;
+         margin-left: -6rem;
+         padding-left: 3rem;
 }
+
 #r2{
-	padding-left: 6rem;
-	margin-right: 2rem;
+     padding-left: 12rem;
+     margin-right: 2rem;
 }
 #Id1{
-	margin-left:4rem;
-	margin-top: 2rem;
-}
+    margin-left:-10rem;
+    margin-top: 2rem;
+} 
 #text1{
-	margin-left:4rem;
-	border-radius:4pt;
-}
+    margin-left:-10rem;
+ border-radius:4pt;
+} 
 #issue1{
-	margin-left:-6rem;
+                margin-left:-6rem;
 }
 
