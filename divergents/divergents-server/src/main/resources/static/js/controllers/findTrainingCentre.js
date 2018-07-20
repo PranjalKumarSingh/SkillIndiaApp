@@ -23,6 +23,12 @@ app.controller('findTCController', function($scope,$http){
 	           
 	             
 	  };
+	
+	$scope.IsVisible = false;
+
+    $scope.ShowHide = function(){
+        $scope.IsVisible = $scope.IsVisible = true;
+    }
 	    
 	    
 	    
