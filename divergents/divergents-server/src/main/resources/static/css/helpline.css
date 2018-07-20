@@ -1,17 +1,16 @@
-
 .helpline
 {
-	margin-top: -5rem;
+       margin-top: -5rem;
 }
 #t1
 {
-	margin-left:-1%;
-	color: #7BA9DC;
-	
+       margin-left:-1%;
+       color: #7BA9DC;
+       
 }
 #t2
 {
-	    font-size: 72%;
+           font-size: 72%;
 }
 
 .bb2 {
@@ -21,10 +20,10 @@
 }
 
 .bb1 {
-	margin-top: -18%;
-	margin-left: 40%;
+       margin-top: -18%;
+       margin-left: 40%;
     padding-top: 0%;
-	display:block;
+       display:block;
     width:25rem;
     float: right;
     text-decoration: none;
@@ -84,13 +83,13 @@ div, ul, li, ol {
     padding-top: 4%;
 }
 . locate{
-	padding-bottom: 3%;
+       padding-bottom: 3%;
 }
 .row1{
-	height:35rem;
-	display:flex;
+       height:28rem;
+       display:flex;
 }
 .row2 {
-    margin-top: -5rem;
+   margin-top: -5%;
     margin-left: 19%;
 }

@@ -117,12 +117,12 @@ h6{
 
 }
 .image2{
-    margin-left:5%;
+    margin-left:4%;
       border-right:1px solid #bbb;
       height:11rem;
 }
 .img2{
-      height: 4rem;
+      height: 6rem;
     padding: 1rem;
     margin-left: 0rem;
 
@@ -133,7 +133,7 @@ h6{
       height:11rem;
 }
 .img3{
-      height: 4rem;
+      height: 6rem;
     padding: 1rem;
     margin-left: -1rem;
 
@@ -145,7 +145,7 @@ h6{
       height:11rem;
 }
 .img4{
-      height: 4rem;
+      height: 6rem;
     padding: 1rem;
     margin-left: -1rem;
 
@@ -156,7 +156,7 @@ h6{
       height:11rem;
 }
 .img5{
-      height: 4rem;
+      height: 6rem;
     padding: 1rem;
     margin-left: 0rem;
 ;
@@ -168,7 +168,7 @@ h6{
       height:11rem;
 }
 .img6{
-      height: 4rem;
+      height: 6rem;
     padding: 1rem;
     margin-left: 0rem;
 
@@ -180,8 +180,19 @@ h6{
     height:11rem;
 }
 .img7{
-      height: 4rem;
+      height: 6rem;
     padding: 1rem;
       margin-left:0rem;
 }
+<<<<<<< .mine
+.alignment{
+margin:-6%;
+}	
+.c_col-md-1{
+	    padding-right: 2px;
+	
+}
+||||||| .r637
+=======
 
+>>>>>>> .r663
