@@ -12,18 +12,27 @@
 #t2{
 	text-align: center;
 	color: white;
-	
+}
+#C1{
+	margin-left: -11rem;
+}
+#C2{
+	margin-left: -11rem;
+}
+#C3{
+	margin-left: -11rem;
 }
 
 #a1
 {
 	color: #A07266;
-	margin-left: 8rem;
+	margin-left: 3rem;
+    font-size: 22pt;
 }
 #t4
 {
 	display: flex;
-	margin-top: 8%;
+	margin-top: 10%;
 }
 #t6
 {
@@ -37,15 +46,17 @@
 #s1
 {
 height: 3.7rem;
+font-size:14pt;
 }
 #s2
 {
 	height: 3.2rem;
+	font-size:14pt;
 }
 .btn 
 {
-font-size: 12px;
-margin-left: 3rem;
+    font-size: 11pt;
+    margin-left: -5rem;
 }
 #s3
 {
@@ -58,12 +69,24 @@ margin-left: 3rem;
 }
 #s6 {
     color: #7BA9DC;
-    margin-left: 36%;
+    font-size: 25pt;
+    margin-left: 20pt;
 }
 
 
 .form-group {
-    margin-bottom: -8px;
+    margin-left: -5rem;
+    width:90%;
+    margin-bottom: -2rem;
+    margin-top: 3pt;
+    padding-left: 4rem;
 }
-
+#category{
+	margin-left: -2rem;
+    margin-top: -2rem;
+}
+#sector{
+	margin-top: -19pt;
+}
+}
 	
