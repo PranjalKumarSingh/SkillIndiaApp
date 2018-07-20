@@ -3,7 +3,7 @@
 </head>
 
 
-
+<div ng-controller="findTCController">
 	
    <div class="row1">
       <div class="col-md-5" id="formBox" style="margin-left:3%">
@@ -42,20 +42,20 @@
               		<br>
                   
     
-                  <input type="submit" value="FIND CENTERS"/ ng-submit="showgrid()"><br>
+                <button type="button" class="btn btn-primary" ng-click="ShowHide()"/>FIND CENTER</button><br>
                </div>
             </form>
          </div>
       </div>
-      <div ng-controller="findTCController">
-         <div class="col-md-6">
+      
+         <div class="col-md-6"  ng-show = "IsVisible">
             <div class="col-md-12">
                <div class="table">
                   <div ui-grid="details"  class="grid grid-align " ui-grid-auto-resize></div>
                </div>
             </div>
          </div>
-      </div>
+    
    </div>
    <!-- FADE IN FADE OUT -->
 <div class="modal fade in" id="myFormModal" ng-show="showInterest">
@@ -89,4 +89,5 @@
             
         	</div>
    		 </div>
+		</div>
 		</div>	
