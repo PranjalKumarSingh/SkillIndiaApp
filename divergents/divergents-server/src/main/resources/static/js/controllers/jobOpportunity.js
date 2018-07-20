@@ -17,7 +17,7 @@ app.controller('jobOpportunityController', function($scope, $http){
 
         columnDefs: [
             {
-            	name: 'jobId', 
+            	name: 'jobRoleId', 
                 displayName: 'Job ID'
             },
             {
@@ -25,7 +25,7 @@ app.controller('jobOpportunityController', function($scope, $http){
             	displayName: 'Job Title'
             },
             {
-                name: 'jobOrganisation',
+                name: 'organisation',
                 displayName: 'Organisation'
             },
             {
