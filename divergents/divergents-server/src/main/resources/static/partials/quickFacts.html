@@ -4,111 +4,103 @@
 
 <div ng-controller="quickFactsController">
 
-	<div class="container-fluid dashborad-container">
-        <div class="dashborad-panelWrap">
-            <h3 class="text">Overall Information</h3>
+	 <div class="container">
+        <H4 class="heading">Overall Training Information</H4>
+        <div class="">
+            <div class="row" style="">
+				<div class="col-md-1"></div>
+                <div class="col-md-2 first-point" style="">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
 
-            <div class="upper-panel">
-                <div class="dashboard-col-sm-2">
-                    <div class="dashboard-panel">
-                        <div class="dashboard-panel-body" style="background-color:#F6AB3D;">
-                            <div class="annualTarget">
-                            <b>15</b>
-
+                            <div class="panel-heading first" style="background-color:#F6AB3D;color:white">
+                                <div>15</div>
+                            </div>
+                            <div class="panel-body" style="background-color:#E18806;color:white;padding:0%">
+                                <div>INDUSTRY PARTNERSHIP</div>
                             </div>
                         </div>
-                        <div class="dashboard-panel-footer" style="background-color:#E18806;">INDUSTRY PARTNERSHIP</div>
                     </div>
                 </div>
 
-                <div class="dashboard-col-sm-2">
-                    <div class="panel panel-default">
-                        <div class="dashboard-panel-body" style="background-color:#A3C3E7;">
-                            <div class="totalCandidatesTrained">
-                           <b>1600000</b> 
+                <div class="col-md-2 second-point" style="">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color:#A3C3E7;color:white">
+                                <div>160000</div>
+                            </div>
+                            <div class="panel-body" style="background-color:#9999FF;color:white;padding:0%">
+                                <div>CSR FUNDS</div>
                             </div>
                         </div>
-                        <div class="dashboard-panel-footer" style="background-color:#7BA9DC;">CSR FUNDS</div>
                     </div>
                 </div>
-					
-                <div class="dashboard-col-sm-2">
-                    <div class="panel panel-default">
-                        <div class="dashboard-panel-body" style="background-color:#c68d7f;">
-                            <div class="totalCandidatesCertified">
-                                <b>4230</b>
-                               
+                <div class="col-md-2 third-point" style="">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading" style="background-color:#C6807F;color:white">
+                                <div>4230</div>
+                            </div>
+                            <div class="panel-body" style="background-color:#A07266;color:white;padding:0%">
+                                <div>CANDIDATE CERTIFIED</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 fourth-point" style="">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color:#57C5D9;color:white">
+                                <div>6</div>
+                            </div>
+                            <div class="panel-body" style="background-color:#2DABC1;color:white;padding:0%">
+                                <div>JOB ROLES</div>
                             </div>
                         </div>
-                        <div class="dashboard-panel-footer" style="background-color:#A07266;">CANDIDATES CERTIFIED</div>
                     </div>
                 </div>
-
-                <div class="dashboard-col-sm-2">
-                    <div class="panel panel-default">
-                        <div class="dashboard-panel-body" style="background-color:#57C5D9;">
-                            <div class="totalTrainingCenters" class="TotalTC">
-                               
-                                <b>6 </b> 
+                <div class="col-md-2 fifth-point" style="">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-color:#BCD43A;color:white">
+                                <div>25</div>
+                            </div>
+                            <div class="panel-body" style="background-color:#A6C118;color:white;padding:0%">
+                                <div>TRAINING PARTNERSHIP</div>
                             </div>
                         </div>
-                        <div class="dashboard-panel-footer" style="background-color:#2DABC1;">JOB ROLES</div>
                     </div>
                 </div>
-
-
-                <div class="dashboard-col-sm-2">
-                    <div class="panel panel-default">
-                        <div class="dashboard-panel-body" style="background-color:#BCD43A;">
-                            <div class="annualTarget">
-                                <b>25</b>
-
-                            </div>
-                        </div>
-                        <div class="dashboard-panel-footer" style="background-color:#A6C118;">TRAINING PARTNERS</div>
-                    </div>
-                </div>
+				<div class="col-md-1"></div>
             </div>
-        
-     
-
-</div>
-</div>
-    
-    <div class="row" style="margin-right:25rem">
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-12">
 			<div class="col-md-6">
             <div class="form-group" id="t1">
 
-                  <select ng-model="myVar" ng-change="firstFunc()">
+                  <select ng-model="myVar" ng-change="firstFunc()" style="margin-left:85%;font-size:70%">
 	        <option value="1">placement of top 5 TP</option>
 	  <option value="2">maximum csr contributor</option>
 	</select>
             </div>
 			</div>
 			<div class="col-md-6">
-			<div ng-switch="myVar">
+            <div ng-switch="myVar">
 	    <div ng-switch-when="1">
-	        <div id="container"></div>
-	           <hc-generic-chart options='chartOptions'></hc-generic-chart>
+	        <div id="container" style="min-width: 110px; height: 300px; max-width: 600px; margin: 0 auto"></div> -->
+	        <hc-generic-chart options='chartOptions' style="min-width: 110px; height: 300px; max-width: 600px; margin: 0 auto"></hc-generic-chart>
 	    </div>
 	    <div ng-switch-when="2">
-	        <hc-chart id="charts" data="pieData"></hc-chart>
+	        <hc-chart id="charts" data="pieData" style="min-width: 110px; height: 300px; max-width: 600px; margin: 0 auto"></hc-chart>
 	    </div>
 		</div>
 	</div>
-	</div>
-	</div>
-</div>
+
         </div>
 		</div>
-		</div>
-	        <script src="js/controllers/quickFacts.js" type="text/javascript"></script>
-            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-            <script src="https://code.highcharts.com/highcharts.js"></script>
-            <script src="https://code.highcharts.com/modules/exporting.js"></script>
-            <script src="https://code.highcharts.com/modules/export-data.js"></script>
-
- 
 	
-</div>
+          
