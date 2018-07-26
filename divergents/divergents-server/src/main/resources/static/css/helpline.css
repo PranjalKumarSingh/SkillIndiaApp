@@ -87,8 +87,16 @@ div, ul, li, ol {
       
 }
 .row1{
+<<<<<<< .mine
+	height:28rem;
+	display:flex;
+||||||| .r659
+	height:35rem;
+	display:flex;
+=======
        height:28rem;
        display:flex;
+>>>>>>> .r700
 }
 .row2 {
    margin-top: -5%;
